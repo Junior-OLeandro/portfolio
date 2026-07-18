@@ -1,0 +1,113 @@
+/* =====================================================
+   DESIGNER THEME
+===================================================== */
+
+.designer {
+  /* Cor padrão dos textos e ícones */
+  color: var(--designer-primary);
+
+  /* Fonte padrão do lado Designer */
+  font-family: var(--font-designer-text);
+
+  /* Variáveis do tema (herdadas pelos filhos) */
+  --theme-primary: var(--designer-primary);
+  --theme-hover: var(--designer-hover);
+  --theme-shadow: var(--designer-shadow);
+  --theme-title: var(--font-designer-title);
+  --theme-text: var(--font-designer-text);
+}
+
+/* Títulos e botões do Designer */
+.designer h1,
+.designer h2,
+.designer h3,
+.designer button {
+  font-family: var(--theme-title);
+}
+
+/* Texto secundário do Designer */
+.designer p,
+.designer span {
+  font-family: var(--theme-text);
+}
+
+
+.designer a:hover {
+  background: var(--designer-primary);
+  color: var(--developer-primary);
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   DEVELOPER THEME
+===================================================== */
+
+.developer {
+  /* Cor padrão dos textos e ícones */
+  color: var(--developer-primary);
+
+  /* Fonte padrão do lado Developer */
+  font-family: var(--font-developer-text);
+
+  /* Variáveis do tema (herdadas pelos filhos) */
+  --theme-primary: var(--developer-primary);
+  --theme-hover: var(--developer-hover);
+  --theme-shadow: var(--developer-shadow);
+  --theme-title: var(--font-developer-title);
+  --theme-text: var(--font-developer-text);
+}
+
+/* Títulos e botões do Developer */
+.developer h1,
+.developer h2,
+.developer h3,
+.developer button {
+  font-family: var(--theme-title);
+}
+
+/* Texto secundário do Developer */
+.developer p,
+.developer span {
+  font-family: var(--theme-text);
+}
+
+.developer a:hover {
+  background: var(--developer-primary);
+  color: var(--designer-primary);
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BOTÃO BASE (FUNCIONA NOS DOIS TEMAS)
+===================================================== */
+
+.theme-button a {
+
+
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-normal);
+
+
+}
+
+
+
+/* =====================================================
+   TÍTULOS BASE
+===================================================== */
+
+.theme-title {
+  font-family: var(--theme-title);
+  font-weight: var(--font-bold);
+  line-height: 1; 
+}
+
+.theme-text {
+  font-family: var(--theme-text);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

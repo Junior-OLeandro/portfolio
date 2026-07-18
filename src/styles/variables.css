@@ -1,0 +1,84 @@
+:root {
+
+  /* ==========================
+     BACKGROUND
+  ========================== */
+
+  --bg-primary: #050505;
+  --bg-secondary: #0B0B0F;
+  --bg-card: #121217;
+
+  /* ==========================
+     DESIGNER
+  ========================== */
+
+  --designer-primary: #10B981;
+  --designer-hover: #0EA371;
+  --designer-light: #34D399;
+  --designer-dark: #047857;
+  --designer-shadow: rgba(16, 185, 129, 0.35);
+
+  /* ==========================
+     DEVELOPER
+  ========================== */
+
+  --developer-primary: #4F46E5;
+  --developer-hover: #4338CA;
+  --developer-light: #6366F1;
+  --developer-dark: #3730A3;
+  --developer-shadow: rgba(79, 70, 229, 0.35);
+
+  /* ==========================
+     TEXT
+  ========================== */
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --text-muted: #7A7A7A;
+
+  /* ==========================
+     BORDERS
+  ========================== */
+
+  --border-primary: #ff0000;
+  --border-light: #cebb0d;
+
+  /* ==========================
+     DIVIDER
+  ========================== */
+
+  --divider: #ff0000;
+
+  /* ==========================
+     TRANSITIONS
+  ========================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ==========================
+     BORDER RADIUS
+  ========================== */
+
+  --radius-sm: .5rem;
+  --radius-md: .75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* ==========================
+   TYPOGRAPHY
+========================== */
+
+  /* Designer */
+
+  --font-designer-title: "Syne", sans-serif;
+  --font-designer-text: "Manrope", sans-serif;
+
+  /* Developer */
+
+  --font-developer-title: "Space Grotesk", sans-serif;
+  --font-developer-text: "JetBrains Mono", monospace;
+
+}
+

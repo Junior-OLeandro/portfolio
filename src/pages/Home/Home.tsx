@@ -1,3 +1,7 @@
+import { SplitScreen } from "./SplitScreen/SplitScreen"
+
 export const Home = () => {
-    return <h2>Home</h2>
+    return (
+    <SplitScreen/>
+    )
 }
