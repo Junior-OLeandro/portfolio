@@ -1,7 +1,7 @@
-import { SplitScreen } from "./SplitScreen/SplitScreen"
+import { SplitScreen } from "./SplitScreen/SplitScreen";
 
-export const Home = () => {
+export function Home() {
     return (
-    <SplitScreen/>
-    )
+        <SplitScreen/>
+    );
 }

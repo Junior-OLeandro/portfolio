@@ -1,0 +1,40 @@
+.arrow-left,
+.arrow-right {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* seta esquerda */
+.arrow-left {
+    animation: moveLeft 1.6s ease-in-out infinite;
+}
+
+/* seta direita */
+.arrow-right {
+    animation: moveRight 1.6s ease-in-out infinite;
+}
+
+@keyframes moveLeft {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes moveRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+}

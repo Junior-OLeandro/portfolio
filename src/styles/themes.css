@@ -29,6 +29,7 @@
 .designer p,
 .designer span {
   font-family: var(--theme-text);
+  color: var(--text-secondary);
 }
 
 
@@ -70,6 +71,7 @@
 .developer p,
 .developer span {
   font-family: var(--theme-text);
+    color: var(--text-secondary);
 }
 
 .developer a:hover {
@@ -110,4 +112,15 @@
   font-family: var(--theme-text);
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.divider:hover {
+    width: 3px;
+    transition: all .3s ease;
+    cursor: ew-resize;
+}
+
+.divider:hover .arrow-left,
+.divider:hover .arrow-right {
+    animation-duration: .8s;
 }
