@@ -2,45 +2,25 @@ import { Link } from "react-router-dom";
 
 import developerIcon from "/src/assets/images/vetor-developer.svg";
 import developerProject from "/src/assets/images/foto-developerproject.webp";
-import portraitDeveloper from "/src/assets/images/foto-developer.webp";
+
 
 export function DeveloperSide() {
     return (
-        <section
-            className="
-                developer
-                relative
-                h-[calc(100vh-120px)]
-                overflow-hidden
-            "
-        >
-            {/* CONTAINER */}
+        <section className="developer relative h-[calc(100vh-120px)] overflow-hidden">
+
             <div className="mx-auto h-full max-w-[1600px]">
 
-                {/* GRID */}
+                <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
+                    <h3 className="developer text-2xl tracking-[0.2em] uppercase font-light">
+                        DO CONCEITO AO CÓDIGO.
+                    </h3>
+                </div>
+
+
                 <div className="grid h-full grid-cols-2">
 
-                    {/* ===================================== */}
-                    {/* ESQUERDA */}
-                    {/* ===================================== */}
-
-                    <div className="
-                            flex
-                            flex-col
-                            justify-center
-                            items-start
-                    
-                            pl-12
-                            xl:pr-20
-                        ">
-                        <div
-                            className="
-                            flex
-                            flex-col
-                            items-center
-                    
-                        "
-                        >
+                    <div className="flex flex-col justify-center items-start pl-12 xl:pr-20">
+                        <div className="flex flex-col items-center">
                             <span className="mb-8 text-[21px]">
                                 Código • Performance • Experiência
                             </span>
@@ -53,22 +33,8 @@ export function DeveloperSide() {
                         </div>
                     </div>
 
-                    
-
-                    {/* ===================================== */}
-                    {/* DIREITA */}
-                    {/* ===================================== */}
-
                     <div
-                        className="
-                            flex
-                            flex-col
-                            justify-center
-                            items-end
-                            pr-15
-                            xl:pl-20
-                        "
-                    >
+                        className="flex flex-col justify-center items-end pr-15 xl:pl-20">
                         <img
                             src={developerIcon}
                             alt="Designer"
@@ -96,63 +62,9 @@ export function DeveloperSide() {
                         </ul>
 
                     </div>
-                    
+
                 </div>
             </div>
-
-            {/* =======================
-        FRASE CENTRAL
-    ======================= */}
-
-            <div
-                className="
-            absolute
-            top-8
-            left-1/2
-            -translate-x-1/2
-            z-30
-            text-center
-            whitespace-nowrap
-        "
-            >
-                <h3
-                    className="
-                    
-                text-2xl
-                tracking-[0.2em]
-                uppercase
-                font-light
-
-            "
-                >
-                    DO  CONCEITO  AO  CÓDIGO.
-                </h3>
-            </div>
-
-
-
-            {/* ===================================== */}
-            {/* FOTO CENTRAL */}
-            {/* ===================================== */}
-
-            <div
-                className="
-                    absolute
-                    left-1/2
-                    bottom-0
-                    -translate-x-1/2
-                    z-[-1]
-                    pointer-events-none
-                    opacity-90
-                "
-            >
-                <img
-                    src={portraitDeveloper}
-                    alt="Junior Oliveira"
-                    className="h-[70vh]"
-                />
-            </div>
-
         </section>
     );
 }

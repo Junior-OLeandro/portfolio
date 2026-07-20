@@ -5,20 +5,22 @@ import { DeveloperSide } from "../../../components/DeveloperSide/DeveloperSide";
 import { Divider } from "../../../components/Divider/Divider";
 import { Portrait } from "../../../components/Portrait/Portrait";
 
+
 export function SplitScreen() {
 
-    const [isDesigner, setIsDesigner] = useState(true);
+    const [position, setPosition] = useState(50);
+    const isDesigner = position <= 50;
 
     return (
         <section className="relative h-full overflow-hidden">
 
-            <DesignerSide />
+            <DesignerSide position={position} />
 
-            <DeveloperSide />
+            <DeveloperSide position={position} />
 
-            <Divider />
+            <Divider position={position} />
 
-            <Portrait isDesigner={isDesigner} />
+            <Portrait isDesigner={isDesigner} position={position} />
 
         </section>
     );

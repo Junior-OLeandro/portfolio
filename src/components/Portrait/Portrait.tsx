@@ -3,48 +3,42 @@ import portraitDeveloper from "/src/assets/images/foto-developer.webp";
 
 type PortraitProps = {
     isDesigner: boolean;
+    position: number;
 }
 
 
-export function Portrait({ isDesigner }: PortraitProps) {
+export function Portrait({ isDesigner, position }: PortraitProps) {
     return (
         <>
-            {/* FRASE */}
-            <div
-                className="
-                designer
-                    absolute
-                    top-10
-                    left-1/2
-                    -translate-x-1/2
-                    z-40
-                    whitespace-nowrap
-                    pointer-events-none
-                "
-            >
-                <h3 className="text-2xl tracking-[0.2em] uppercase font-light">
-                    DO CONCEITO AO CÓDIGO.
-                </h3>
-            </div>
 
-            {/* FOTO */}
-            <div
-                className="
-                    absolute
-                    left-1/2
-                    bottom-0
-                    -translate-x-1/2
-                    z-[-1]
-                    pointer-events-none
-                    opacity-70
-                "
-            >
+                        <div
+                className="absolute bottom-0 -translate-x-[51%] z-[-1] pointer-events-none"
+                style={{ left: `${position}%` }}>
+
+                <div className="relative ">
+
+                    <img
+                        src={portraitDeveloper}
+                        alt="Retrato Developer"
+                        className={`absolute left-0 bottom-0 h-[70vh] transition-opacity duration-500
+                        ${isDesigner ? "opacity-0" : "opacity-100"}
+                        `}
+                    />
+
+                    <img
+                        src={portraitDesigner}
+                        alt="Retrato Designer"
+                        className={`h-[70vh] transition-opacity duration-500
+                        ${isDesigner ? "opacity-100" : "opacity-0"}
+                        `}
+                    />
 
 
-                <img
-                    src={isDesigner ? portraitDesigner : portraitDeveloper}
-                    alt="Junior Oliveira" className="h-[70vh]"
-                />
+
+                </div>
+
+
+
             </div>
         </>
     );
