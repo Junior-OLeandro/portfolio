@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 
 import developerIcon from "/src/assets/images/vetor-developer.svg";
 import developerProject from "/src/assets/images/foto-developerproject.webp";
+import type { DesignerSideProps } from "../../types/types";
+import portraitDeveloper from "/src/assets/images/foto-developer.webp";
 
 
-export function DeveloperSide() {
+export function DeveloperSide({ position }: DesignerSideProps)  {
     return (
-        <section className="developer relative h-[calc(100vh-120px)] overflow-hidden">
+        <section
+            className="developer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden"
+            style={{
+                clipPath: `inset(0 0 0 ${100 - position}%)`
+            }}
+        >
 
             <div className="mx-auto h-full max-w-[1600px]">
 
@@ -14,6 +21,18 @@ export function DeveloperSide() {
                     <h3 className="developer text-2xl tracking-[0.2em] uppercase font-light">
                         DO CONCEITO AO CÓDIGO.
                     </h3>
+                </div>
+
+                <div
+                    className="absolute bottom-0 left-1/2 -translate-x-[51%] z-[-1] pointer-events-none">
+
+                    <div className="relative ">
+
+                        <img
+                            src={portraitDeveloper}
+                            alt="Retrato Designer"
+                            className="h-[70vh]" />
+                    </div>
                 </div>
 
 

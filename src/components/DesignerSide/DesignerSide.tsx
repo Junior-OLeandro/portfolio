@@ -2,13 +2,21 @@ import { Link } from "react-router-dom";
 
 import designerIcon from "/src/assets/images/vetor-designer.svg";
 import designerProject from "/src/assets/images/foto-designerproject.webp";
+import portraitDesigner from "/src/assets/images/foto-designer.webp";
+import type { DesignerSideProps } from "../../types/types";
 
 
-export function DesignerSide() {
+
+export function DesignerSide({ position }: DesignerSideProps) {
     return (
         <section
-            className=" designer relative h-[calc(100vh-120px)] overflow-hidden">
-            
+            className="designer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden"
+            style={{
+                clipPath: `inset(0 ${100 - position}% 0 0)`
+            }}
+        >
+
+
             <div className="mx-auto h-full max-w-[1600px]">
                 <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
                     <h3 className="designer text-2xl tracking-[0.2em] uppercase font-light">
@@ -16,10 +24,22 @@ export function DesignerSide() {
                     </h3>
                 </div>
 
-                
+                <div
+                    className="absolute bottom-0 left-1/2 -translate-x-[51%] z-[-1] pointer-events-none">
+
+                    <div className="relative ">
+
+                        <img
+                            src={portraitDesigner}
+                            alt="Retrato Designer"
+                            className="h-[70vh]" />
+                    </div>
+                </div>
+
+
                 <div className="grid h-full grid-cols-2">
 
-                    
+
                     <div className=" flex flex-col justify-center pl-12 xl:pl-20">
                         <img
                             src={designerIcon}
@@ -66,7 +86,7 @@ export function DesignerSide() {
                     </div>
                 </div>
             </div>
-            
+
         </section>
     );
 }
