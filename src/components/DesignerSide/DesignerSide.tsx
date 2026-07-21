@@ -10,7 +10,7 @@ import type { DesignerSideProps } from "../../types/types";
 export function DesignerSide({ position }: DesignerSideProps) {
     return (
         <section
-            className="designer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden"
+            className="designer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden justify-between"
             style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
 
