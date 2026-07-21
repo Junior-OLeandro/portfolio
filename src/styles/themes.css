@@ -25,6 +25,12 @@
   font-family: var(--theme-title);
 }
 
+.designer button {
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
 /* Texto secundário do Designer */
 .designer p,
 .designer span {
@@ -33,7 +39,8 @@
 }
 
 
-.designer a:hover {
+.designer a:hover,
+.designer button:hover{
   background: var(--designer-primary);
   color: var(--developer-primary);
   transform: translateY(-2px);
@@ -65,7 +72,14 @@
 .developer h3,
 .developer button {
   font-family: var(--theme-title);
+  
 }
+.developer button {
+  padding: 1rem 2rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
 
 /* Texto secundário do Developer */
 .developer p,
@@ -74,9 +88,10 @@
     color: var(--text-secondary);
 }
 
-.developer a:hover {
-  background: var(--developer-primary);
-  color: var(--designer-primary);
+.developer a:hover,
+.developer button:hover {
+  background: var(--developer-hover);
+  color: var(--designer-hover);
   transform: translateY(-2px);
 }
 
@@ -85,7 +100,8 @@
    BOTÃO BASE (FUNCIONA NOS DOIS TEMAS)
 ===================================================== */
 
-.theme-button a {
+.theme-button a,
+.theme-button button {
 
 
   padding: 1rem 2rem;
