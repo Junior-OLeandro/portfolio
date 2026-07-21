@@ -11,13 +11,11 @@ export function DesignerSide({ position }: DesignerSideProps) {
     return (
         <section
             className="designer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden"
-            style={{
-                clipPath: `inset(0 ${100 - position}% 0 0)`
-            }}
+            style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
 
 
-            <div className="mx-auto h-full max-w-[1600px]">
+            <div className="mx-auto h-full max-w-full">
                 <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
                     <h3 className="designer text-2xl tracking-[0.2em] uppercase font-light">
                         DO CONCEITO AO CÓDIGO.
@@ -37,7 +35,7 @@ export function DesignerSide({ position }: DesignerSideProps) {
                 </div>
 
 
-                <div className="grid h-full grid-cols-2">
+                <div className="grid h-full w-full grid-cols-2">
 
 
                     <div className=" flex flex-col justify-center pl-12 xl:pl-20">

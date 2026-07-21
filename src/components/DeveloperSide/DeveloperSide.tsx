@@ -2,20 +2,17 @@ import { Link } from "react-router-dom";
 
 import developerIcon from "/src/assets/images/vetor-developer.svg";
 import developerProject from "/src/assets/images/foto-developerproject.webp";
-import type { DesignerSideProps } from "../../types/types";
+import type { DeveloperSideProps } from "../../types/types";
 import portraitDeveloper from "/src/assets/images/foto-developer.webp";
 
 
-export function DeveloperSide({ position }: DesignerSideProps)  {
+export function DeveloperSide({ position }: DeveloperSideProps) {
     return (
         <section
             className="developer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden"
-            style={{
-                clipPath: `inset(0 0 0 ${100 - position}%)`
-            }}
+            style={{ clipPath: `inset(0 0 0 ${position}%)` }}
         >
-
-            <div className="mx-auto h-full max-w-[1600px]">
+            <div className="mx-auto h-full max-w-full">
 
                 <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
                     <h3 className="developer text-2xl tracking-[0.2em] uppercase font-light">
@@ -23,40 +20,37 @@ export function DeveloperSide({ position }: DesignerSideProps)  {
                     </h3>
                 </div>
 
-                <div
-                    className="absolute bottom-0 left-1/2 -translate-x-[51%] z-[-1] pointer-events-none">
 
-                    <div className="relative ">
-
+                <div className="absolute bottom-0 left-1/2 -translate-x-[51%] z-[-1] pointer-events-none">
+                    <div className="relative">
                         <img
                             src={portraitDeveloper}
-                            alt="Retrato Designer"
-                            className="h-[70vh]" />
+                            alt="Retrato Developer"
+                            className="h-[70vh]"
+                        />
                     </div>
                 </div>
 
+                <div className="grid h-full w-full grid-cols-2 items-center">
 
-                <div className="grid h-full grid-cols-2">
 
-                    <div className="flex flex-col justify-center items-start pl-12 xl:pr-20">
-                        <div className="flex flex-col items-center">
-                            <span className="mb-8 text-[21px]">
-                                Código • Performance • Experiência
-                            </span>
+                    <div className="flex flex-col justify-center pl-12 xl:pl-20">
+                        <span className="mb-8 text-[21px]">
+                            Código • Performance • Experiência
+                        </span>
 
-                            <img
-                                src={developerProject}
-                                alt="Projeto"
-                                className="w-[330px] opacity-60"
-                            />
-                        </div>
+                        <img
+                            src={developerProject}
+                            alt="Projeto"
+                            className="w-[330px]"
+                        />
                     </div>
 
-                    <div
-                        className="flex flex-col justify-center items-end pr-15 xl:pl-20">
+
+                    <div className="flex flex-col justify-center items-end pr-12 xl:pr-20">
                         <img
                             src={developerIcon}
-                            alt="Designer"
+                            alt="Developer"
                             className="mb-8 w-36"
                         />
 
@@ -70,10 +64,6 @@ export function DeveloperSide({ position }: DesignerSideProps)  {
                             ideias em realidade.
                         </h2>
 
-                        <p className="mb-10 w-72 text-lg leading-8 text-end">
-                            Criando experiências do conceito ao código.
-                        </p>
-
                         <ul>
                             <li className="theme-button">
                                 <Link to="/projects">Projetos ↖</Link>
@@ -81,7 +71,6 @@ export function DeveloperSide({ position }: DesignerSideProps)  {
                         </ul>
 
                     </div>
-
                 </div>
             </div>
         </section>
