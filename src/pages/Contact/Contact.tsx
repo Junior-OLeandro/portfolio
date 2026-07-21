@@ -1,15 +1,22 @@
+import {
+    FiMail,
+    FiPhone,
+    FiLinkedin,
+    FiGithub,
+} from "react-icons/fi";
+
 export const Contact = () => {
     return (
-        <main className="h-[calc(100vh-120px)] px-15">
+        <main className="h-[calc(100vh-120px)] px-10">
 
 
-            <section className="text-center py-5">
+            <section className="text-center py-4">
 
                 <h1 className="developer text-5xl uppercase tracking-[0.15em]">
                     Entre em Contato
                 </h1>
 
-                <h2 className="designer mt-5 text-xl tracking-[0.1em]">
+                <h2 className="designer mt-3 text-xl tracking-[0.1em]">
                     Vamos tirar sua ideia do papel.
                 </h2>
 
@@ -18,9 +25,6 @@ export const Contact = () => {
 
             <section className="grid grid-cols-2 gap-15 mt-7">
 
-                {/* ========================= */}
-                {/* CONTATOS */}
-                {/* ========================= */}
 
                 <aside className="developer flex flex-col">
 
@@ -28,53 +32,87 @@ export const Contact = () => {
                         Vamos conversar?
                     </h2>
 
-                    <p className="mt-3 max-w-[350px] leading-6">
+                    <p className="mt-3 max-w-[400px] leading-6">
                         Se você procura alguém para desenvolver um projeto,
                         criar uma identidade visual ou transformar uma ideia
                         em um produto digital, estou à disposição.
                     </p>
 
-                    <div className="designer mt-7 space-y-4">
+                    <div className="designer mt-7 space-y-2 w-120">
 
-                        <div>
-                            <h3 className="text-sm uppercase tracking-widest">
-                                E-mail
-                            </h3>
+                        <a
+                            href="mailto:junior.oleandrobq@gmail.com"
+                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300 "
+                        >
+                            <FiMail className="text-2xl" />
 
-                            <p className="text-xl">
-                                contato@junioroliveira.dev
-                            </p>
-                        </div>
+                            <div>
+                                <h3 className="text-sm uppercase tracking-widest">
+                                    E-mail
+                                </h3>
 
-                        <div>
-                            <h3 className=" text-sm uppercase tracking-widest">
-                                WhatsApp
-                            </h3>
+                                <p className="text-xl">
+                                    junior.oleandrobq@gmail.com
+                                </p>
+                            </div>
+                        </a>
 
-                            <p className="text-xl">
-                                (32) 99999-9999
-                            </p>
-                        </div>
+                        <a
+                            href="https://wa.me/5532984575340"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300 "
+                        >
+                            <FiPhone className="text-2xl" />
 
-                        <div>
-                            <h3 className=" text-sm uppercase tracking-widest">
-                                LinkedIn
-                            </h3>
+                            <div>
+                                <h3 className="text-sm uppercase tracking-widest">
+                                    WhatsApp
+                                </h3>
 
-                            <p className="text-xl">
-                                linkedin.com/in/junioroliveira
-                            </p>
-                        </div>
+                                <p className="text-xl">
+                                    (32) 98457-5340
+                                </p>
+                            </div>
+                        </a>
 
-                        <div>
-                            <h3 className=" text-sm uppercase tracking-widest">
-                                GitHub
-                            </h3>
+                        <a
+                            href="https://www.linkedin.com/in/junior-oleandro/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300"
+                        >
+                            <FiLinkedin className="text-2xl " />
 
-                            <p className="text-xl">
-                                github.com/Junior-OLeandro
-                            </p>
-                        </div>
+                            <div>
+                                <h3 className="text-sm uppercase tracking-widest">
+                                    LinkedIn
+                                </h3>
+
+                                <p className="text-xl">
+                                    linkedin.com/in/junior-oleandro/
+                                </p>
+                            </div>
+                        </a>
+
+                        <a
+                            href="https://github.com/Junior-OLeandro"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300"
+                        >
+                            <FiGithub className="text-2xl" />
+
+                            <div>
+                                <h3 className="text-sm uppercase tracking-widest">
+                                    GitHub
+                                </h3>
+
+                                <p className="text-xl">
+                                    github.com/Junior-OLeandro
+                                </p>
+                            </div>
+                        </a>
 
                     </div>
 
