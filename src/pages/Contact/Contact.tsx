@@ -1,9 +1,5 @@
-import {
-    FiMail,
-    FiPhone,
-    FiLinkedin,
-    FiGithub,
-} from "react-icons/fi";
+import { FiMail, FiLinkedin, FiGithub} from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Contact = () => {
     return (
@@ -12,13 +8,11 @@ export const Contact = () => {
 
             <section className="text-center py-4">
 
-                <h1 className="developer text-5xl uppercase tracking-[0.15em]">
-                    Entre em Contato
+                <h1 className="developer text-4xl uppercase tracking-[0.15em]">
+                    Conte sua ideia!
                 </h1>
 
-                <h2 className="designer mt-3 text-xl tracking-[0.1em]">
-                    Vamos tirar sua ideia do papel.
-                </h2>
+                
 
             </section>
 
@@ -28,21 +22,19 @@ export const Contact = () => {
 
                 <aside className="developer flex flex-col">
 
-                    <h2 className="text-4xl">
-                        Vamos conversar?
+                    <h2 className="designer text-4xl">
+                        Soluções que fazem sentido.
                     </h2>
 
                     <p className="mt-3 max-w-[400px] leading-6">
-                        Se você procura alguém para desenvolver um projeto,
-                        criar uma identidade visual ou transformar uma ideia
-                        em um produto digital, estou à disposição.
+                        Se você busca unir estratégia, design e desenvolvimento em um único projeto, estou pronto para transformar sua ideia em uma experiência digital marcante.
                     </p>
 
-                    <div className="designer mt-7 space-y-2 w-120">
+                    <div className="mt-7 space-y-5 w-40 ">
 
                         <a
                             href="mailto:junior.oleandrobq@gmail.com"
-                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300 "
+                            className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300 "
                         >
                             <FiMail className="text-2xl" />
 
@@ -52,7 +44,7 @@ export const Contact = () => {
                                 </h3>
 
                                 <p className="text-xl">
-                                    junior.oleandrobq@gmail.com
+                                    
                                 </p>
                             </div>
                         </a>
@@ -61,9 +53,9 @@ export const Contact = () => {
                             href="https://wa.me/5532984575340"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300 "
+                            className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300 "
                         >
-                            <FiPhone className="text-2xl" />
+                            <FaWhatsapp className="text-2xl" />
 
                             <div>
                                 <h3 className="text-sm uppercase tracking-widest">
@@ -71,7 +63,7 @@ export const Contact = () => {
                                 </h3>
 
                                 <p className="text-xl">
-                                    (32) 98457-5340
+                                    
                                 </p>
                             </div>
                         </a>
@@ -80,7 +72,7 @@ export const Contact = () => {
                             href="https://www.linkedin.com/in/junior-oleandro/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300"
+                            className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300"
                         >
                             <FiLinkedin className="text-2xl " />
 
@@ -90,7 +82,7 @@ export const Contact = () => {
                                 </h3>
 
                                 <p className="text-xl">
-                                    linkedin.com/in/junior-oleandro/
+                                    
                                 </p>
                             </div>
                         </a>
@@ -99,7 +91,7 @@ export const Contact = () => {
                             href="https://github.com/Junior-OLeandro"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-4 rounded-xl p-3 transition-all duration-300"
+                            className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300"
                         >
                             <FiGithub className="text-2xl" />
 
@@ -109,7 +101,7 @@ export const Contact = () => {
                                 </h3>
 
                                 <p className="text-xl">
-                                    github.com/Junior-OLeandro
+                                    
                                 </p>
                             </div>
                         </a>
