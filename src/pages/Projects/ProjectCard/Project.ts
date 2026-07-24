@@ -2,20 +2,25 @@
 
 import type { Project } from "../../../types/types";
 import mineiro from "..//..//..//assets/images/foto-developerproject.webp";
-import pixel from "..//..//..//assets/images/foto-designerproject.webp";
+import seo from "..//..//..//assets/images/seo-project.webp"
+import marcas from "..//..//..//assets/images/branding-project.webp";
+import portfolio from "..//..//..//assets/images/portfolio-project.webp"
+import mkp from "..//..//..//assets/images/mkp-project.webp"
+import social from "..//..//..//assets/images/social-project.webp"
 
 export const projects: Project[] = [
 
     {
         id: 1,
-        title: "Mineiro Hamburgueria",
+        title: "Sistema de pedidos",
         description: "Sistema completo de pedidos online com painel administrativo e integração ao WhatsApp.",
         image: mineiro,
         category: "developer",
         size: "large",
         technologies: [
-            "React",
-            "TypeScript",
+            "HTML",
+            "CSS",
+            "JS",
             "Supabase"
         ],
         github: "",
@@ -24,14 +29,14 @@ export const projects: Project[] = [
 
     {
         id: 2,
-        title: "Pixel",
-        description: "Identidade visual completa.",
-        image: pixel,
-        category: "designer",
+        title: "Gestão de Marketplaces",
+        description: "Criação e operação de lojas virtuais em marketplaces.",
+        image: mkp,
+        category: "developer",
         size: "medium",
         technologies: [
-            "Designer",
-            "Identidade Visual",
+            "Gestão de Produtos",
+            "E-commerce"
         ],
         github: "",
         demo: ""
@@ -39,67 +44,69 @@ export const projects: Project[] = [
 
     {
         id: 3,
-        title: "Landing Page Imobiliária",
-        description: "Landing page moderna para captação de clientes com formulário integrado.",
-        image: "",
-        category: "designer",
-        size: "medium",
-        technologies: [
-            "Figma",
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        github: "",
-        demo: ""
-    },
-
-    {
-        id: 4,
-        title: "Dashboard Financeiro",
-        description: "Painel para acompanhamento de receitas, despesas e indicadores.",
-        image: "",
+        title: "Portfólio Pessoal",
+        description: "Portfólio responsivo desenvolvido para apresentar meus projetos, habilidades e experiência de forma moderna e intuitiva.",
+        image: portfolio,
         category: "developer",
-        size: "medium",
-        technologies: [
-            "React",
-            "TypeScript",
-            "Chart.js"
-        ],
-        github: "",
-        demo: ""
-    },
-
-    {
-        id: 5,
-        title: "Loja Virtual",
-        description: "Interface responsiva para e-commerce com catálogo e carrinho de compras.",
-        image: "",
-        category: "designer",
         size: "large",
         technologies: [
             "React",
-            "Tailwind CSS",
-            "Vite"
+            "TS",
+            "Tailwind"
         ],
         github: "",
         demo: ""
     },
 
     {
-        id: 6,
-        title: "Sistema de Agendamentos",
-        description: "Aplicação para gerenciamento de clientes, horários e serviços.",
-        image:"",
-        category: "developer",
+    id: 4,
+    title: "Marketing Digital",
+    description: "Planejamento, otimização e gestão de canais digitais para fortalecer marcas e gerar resultados.",
+    image: seo,
+    category: "developer",
+    size: "large",
+    technologies: [
+        "SEO",
+        "Analytics",
+        "Google",
+        "Meta",
+        "Social Media"
+    ],
+    github: "",
+    demo: ""
+},
+
+    {
+        id: 5,
+        title: "Design de marca",
+        description: "Criação de marca do zero, desenvolvendo sua identidade visual e personalidade.",
+        image: marcas,
+        category: "designer",
         size: "medium",
         technologies: [
-            "React",
-            "TypeScript",
-            "Supabase"
+            "Design de Marca",
+            "Vetorização",
+            "Branding"
         ],
         github: "",
         demo: ""
-    }
+    },
+
+    {
+    id: 6,
+    title: "Social Media",
+    description: "Criação de conteúdos estratégicos, artes e campanhas para fortalecer a presença da marca nas redes sociais.",
+    image: social,
+    category: "designer",
+    size: "medium",
+    technologies: [
+        "Instagram",
+        "Facebook",
+        "Conteúdo",
+        "Design"
+    ],
+    github: "",
+    demo: ""
+},
 
 ];

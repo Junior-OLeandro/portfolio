@@ -9,7 +9,7 @@ import portraitDeveloper from "/src/assets/images/foto-developer.webp";
 export function DeveloperSide({ position }: DeveloperSideProps) {
     return (
         <section
-            className="developer absolute top-0 left-0 w-full h-[calc(100vh-120px)] overflow-hidden "
+            className="developer absolute top-0 left-0 w-full h-[calc(100vh-100px)] overflow-hidden "
             style={{ clipPath: `inset(0 0 0 ${position}%)` }}
         >
             <div className="mx-auto h-full max-w-full ">

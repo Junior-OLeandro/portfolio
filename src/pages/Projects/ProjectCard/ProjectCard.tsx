@@ -7,7 +7,7 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
     return (
-        <article className={`project ${project.size} ${project.category}`}>
+        <article className={`project  ${project.size} ${project.category}`}>
 
             <img
                 src={project.image}
