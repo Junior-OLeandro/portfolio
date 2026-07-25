@@ -22,7 +22,11 @@ export interface Project {
 
     description: string;
 
-    image?: string;
+    longDescription?: string;
+
+    image: string;
+
+    gallery?: string[];
 
     category: ProjectCategory;
 
@@ -30,7 +34,11 @@ export interface Project {
 
     technologies: string[];
 
+    features?: string[];
+
     github?: string;
 
     demo?: string;
+
+    nextProjectId?: number;
 }

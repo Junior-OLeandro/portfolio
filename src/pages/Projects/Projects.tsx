@@ -3,7 +3,7 @@ import { projects } from "./ProjectCard/Project";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 
 export const Projects = () => {
-    return <section className="projects ml-10 mr-10 ">
+    return <section className="ml-10 mr-10 ">
 
         <header className="designer flex justify-center ml-10 mr-10 mb-7 mt-7">
 

@@ -40,7 +40,8 @@
 
 
 .designer a:hover,
-.designer button:hover{
+.designer button:hover,
+.designer link:hover  {
   background: var(--designer-primary);
   color: var(--developer-primary);
   transform: translateY(-2px);
@@ -74,7 +75,8 @@
   font-family: var(--theme-title);
   
 }
-.developer button {
+.developer button,
+.developer link {
   padding: 1rem 2rem;
   border-radius: var(--radius-md);
   transition: var(--transition-normal);
@@ -89,7 +91,8 @@
 }
 
 .developer a:hover,
-.developer button:hover {
+.developer button:hover,
+.developer link:hover {
   background: var(--developer-hover);
   color: var(--designer-hover);
   transform: translateY(-2px);
@@ -101,7 +104,8 @@
 ===================================================== */
 
 .theme-button a,
-.theme-button button {
+.theme-button button,
+.theme-button link {
 
 
   padding: 1rem 2rem;
