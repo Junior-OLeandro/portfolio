@@ -41,4 +41,14 @@ export interface Project {
     demo?: string;
 
     nextProjectId?: number;
+
+    icon?: string;
+
+    subtitle?: string;
+
+    highlights?: {
+        title: string;
+        description: string;
+        icon: string;
+    }[];
 }
