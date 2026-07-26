@@ -9,9 +9,9 @@ interface Props {
 export function MainProject({ project }: Props) {
     return (
 
-        <main className="grid grid-rows-[55%_45%] ">
+        <main className={` ${project.category} grid grid-rows-[360px_2px_1fr] gap-1`}>
 
-            <section className="grid grid-cols-[45%_55%] h-[330px] bg-amber-800">
+            <section className="grid grid-cols-[45%_55%] h-[330px] ">
 
 
                 <div className="p-8 overflow-hidden flex items-center justify-center">
@@ -19,35 +19,33 @@ export function MainProject({ project }: Props) {
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="max-w-full max-h-60 object-contain border border-amber-100"
+                        className="max-w-full max-h-80 object-contain"
                     />
 
                 </div>
 
 
-                <div className="p-8 flex flex-col ">
+                <div className="p-5 flex flex-col max-h-50">
 
                     <div>
-                        <h1 className="text-4xl font-bold">
-                            {project.title}
+                        <h1 className="text-3xl font-bold">
+                            {project.subtitle}
                         </h1>
 
-                        <p className="mt-2 text-lg text-designer-primary">
-                            {project.subtitle}
-                        </p>
+
                     </div>
 
 
-                    <p className="mt-6 text-base leading-7 text-zinc-400">
+                    <p className="mt-3 text-1xl leading-7 ">
                         {project.longDescription}
                     </p>
 
 
-                    <div className="mt-6 flex flex-wrap gap-3">
+                    <div className="mt-3 flex flex-wrap gap-3">
                         {project.technologies.map((tech) => (
                             <span
                                 key={tech}
-                                className="px-3 py-2 rounded-lg border"
+                                className="p-2  rounded-md border-2"
                             >
                                 {tech}
                             </span>
@@ -55,13 +53,13 @@ export function MainProject({ project }: Props) {
                     </div>
 
 
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-4 mt-auto">
+                    <div className="grid gap-3 grid-cols-2 mt-3 max-w-[700px]">
 
                         {project.highlights?.map((item) => (
 
                             <div
                                 key={item.title}
-                                className="flex gap-3"
+                                className="flex"
                             >
 
 
@@ -74,7 +72,7 @@ export function MainProject({ project }: Props) {
                                         {item.title}
                                     </h4>
 
-                                    <p className="text-sm text-zinc-500">
+                                    <p className="text-sm">
                                         {item.description}
                                     </p>
                                 </div>
@@ -89,23 +87,33 @@ export function MainProject({ project }: Props) {
 
             </section>
 
+            <div
+                className="h-[2px] w-full "
+                style={{
+                    background:
+                        project.category === "designer"
+                            ? "var(--designer-primary)"
+                            : "var(--developer-primary)",
+                    opacity: 0.2,
+                }}
+            />
 
-            <section className="grid grid-cols-[350px_1fr] gap-5 h-full">
+            <section className="grid grid-cols-[400px_2px_1fr]  max-h-55 mt-5">
 
-                {/* Recursos */}
-                <aside className="border rounded-xl p-6">
 
-                    <h3 className="text-xl font-semibold mb-5">
+                <aside className="ml-5">
+
+                    <h3 className="text-2xl font-semibold mb-2 ">
                         Recursos
                     </h3>
 
-                    <ul className="space-y-4">
+                    <ul>
 
                         {project.features?.map((feature) => (
 
                             <li
                                 key={feature}
-                                className="flex items-center gap-3"
+                                className="flex items-center"
                             >
                                 • {feature}
                             </li>
@@ -114,28 +122,41 @@ export function MainProject({ project }: Props) {
 
                     </ul>
 
+
+
                 </aside>
 
-                {/* Galeria */}
-                <section className="border rounded-xl p-5">
+                <div
+                    className="h-full "
+                    style={{
+                        background:
+                            project.category === "designer"
+                                ? "var(--designer-primary)"
+                                : "var(--developer-primary)",
+                        opacity: 0.2,
+                    }}
+                />
 
-                    <h3 className="text-xl font-semibold mb-5">
-                        Galeria
-                    </h3>
 
-                    <div className="grid grid-cols-4 gap-4 h-[180px]">
+
+                <section className="rounded-2xl relative m-3 justify-between">
+
+
+
+                    <div className="grid grid-cols-4 gap-8 place-items-center object-contain">
 
                         {project.gallery?.map((image) => (
 
                             <img
                                 key={image}
                                 src={image}
-                                className="w-full h-full object-cover rounded-lg"
+                                className="max-h-45 object-contain transition-transform duration-300 ease-out hover:scale-105 "
                             />
 
                         ))}
 
                     </div>
+                    
 
                 </section>
 

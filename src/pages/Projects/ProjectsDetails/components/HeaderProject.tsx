@@ -8,7 +8,7 @@ interface Props {
 
 export function HeaderProject({ project }: Props) {
     return (
-        <header className="m-7 flex justify-between items-center">
+        <header className="m-5 flex justify-between items-center">
             <ul>
                 <li className={`developer`}>
                     <Link

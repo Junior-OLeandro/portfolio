@@ -110,48 +110,51 @@ export const Contact = () => {
 
                 </aside>
 
-                {/* ========================= */}
-                {/* FORMULÁRIO */}
-                {/* ========================= */}
 
-                <section className="flex items-center">
+                <form
+    action="https://formspree.io/f/xbdnqdzj"
+    method="POST"
+    className="designer w-[400px] max-w-[450px] space-y-4"
+>
+    <input
+        type="text"
+        name="nome"
+        placeholder="Nome"
+        required
+        className="w-full border-b bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
+    />
 
-                    <form className="designer w-[400px] max-w-[450px] space-y-4">
+    <input
+        type="text"
+        name="contato"
+        placeholder="Contato (e-mail ou telefone)"
+        required
+        className="w-full border-b bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
+    />
 
-                        <input
-                            type="text"
-                            placeholder="Nome"
-                            className="designer w-full border-b bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
-                        />
+    <input
+        type="text"
+        name="assunto"
+        placeholder="Assunto"
+        required
+        className="w-full border-b bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
+    />
 
-                        <input
-                            type="text"
-                            placeholder="Contato (e-mail ou telefone)"
-                            className="w-full border-b  bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
-                        />
+    <textarea
+        name="mensagem"
+        placeholder="Mensagem"
+        rows={5}
+        required
+        className="w-full border-b bg-transparent py-4 outline-none resize-none placeholder:text-(--text-muted)"
+    />
 
-                        <input
-                            type="text"
-                            placeholder="Assunto"
-                            className="w-full border-b  bg-transparent py-4 outline-none placeholder:text-(--text-muted)"
-                        />
-
-                        <textarea
-                            placeholder="Mensagem"
-                            rows={5}
-                            className="w-full border-b  bg-transparent py-4 outline-none resize-none placeholder:text-(--text-muted)"
-                        />
-
-                        <button
-                            type="submit"
-                            className="theme-button mt-6"
-                        >
-                            Enviar Mensagem →
-                        </button>
-
-                    </form>
-
-                </section>
+    <button
+        type="submit"
+        className="theme-button mt-6"
+    >
+        Enviar Mensagem →
+    </button>
+</form>
 
             </section>
 
