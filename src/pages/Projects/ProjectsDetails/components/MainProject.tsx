@@ -1,6 +1,8 @@
 
 
 import type { Project } from "../../../../types/types";
+import { iconMap } from "./ProjectIcons";
+
 
 interface Props {
     project: Project;
@@ -19,7 +21,7 @@ export function MainProject({ project }: Props) {
                     <img
                         src={project.image}
                         alt={project.title}
-                        className="max-w-full max-h-80 object-contain"
+                        className="max-w-full max-h-80  object-contain"
                     />
 
                 </div>
@@ -45,7 +47,7 @@ export function MainProject({ project }: Props) {
                         {project.technologies.map((tech) => (
                             <span
                                 key={tech}
-                                className="p-2  rounded-md border-2"
+                                className="p-2 rounded-md border-2 border-gray-700"
                             >
                                 {tech}
                             </span>
@@ -55,31 +57,33 @@ export function MainProject({ project }: Props) {
 
                     <div className="grid gap-3 grid-cols-2 mt-3 max-w-[700px]">
 
-                        {project.highlights?.map((item) => (
+                        {project.highlights?.map((item) => {
 
-                            <div
-                                key={item.title}
-                                className="flex"
-                            >
+    const Icon = iconMap[item.icon as keyof typeof iconMap];
 
+    return (
+        <div
+            key={item.title}
+            className="flex gap-3"
+        >
 
-                                <div className="mt-1">
+            <div className="mt-1">
+                <Icon size={22} strokeWidth={1.8} />
+            </div>
 
-                                </div>
+            <div>
+                <h4 className="font-semibold">
+                    {item.title}
+                </h4>
 
-                                <div>
-                                    <h4 className="font-semibold">
-                                        {item.title}
-                                    </h4>
+                <p className="text-sm">
+                    {item.description}
+                </p>
+            </div>
 
-                                    <p className="text-sm">
-                                        {item.description}
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        ))}
+        </div>
+    );
+})}
 
                     </div>
 
@@ -113,7 +117,7 @@ export function MainProject({ project }: Props) {
 
                             <li
                                 key={feature}
-                                className="flex items-center"
+                                className="flex items-center text-[var(--text-secondary)]"
                             >
                                 • {feature}
                             </li>

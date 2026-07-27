@@ -7,6 +7,30 @@ import marcas from "..//..//..//assets/images/branding-project.webp";
 import portfolio from "..//..//..//assets/images/portfolio-project.webp"
 import mkp from "..//..//..//assets/images/mkp-project.webp"
 import social from "..//..//..//assets/images/social-project.webp"
+import mineiro1 from "..//..//..//assets/images/mineiro1.webp"
+import mineiro2 from "..//..//..//assets/images/mineiro2.webp"
+import mineiro3 from "..//..//..//assets/images/mineiro3.webp"
+import mineiro4 from "..//..//..//assets/images/mineiro4.webp"
+import mkp1 from "..//..//..//assets/images/mkp1.webp"
+import mkp2 from "..//..//..//assets/images/mkp2.webp"
+import mkp3 from "..//..//..//assets/images/mkp3.webp"
+import mkp4 from "..//..//..//assets/images/mkp4.webp"
+import marcas1 from "..//..//..//assets/images/marcas1.webp"
+import marcas2 from "..//..//..//assets/images/marcas2.webp"
+import marcas3 from "..//..//..//assets/images/marcas3.webp"
+import marcas4 from "..//..//..//assets/images/marcas4.webp"
+import seo1 from "..//..//..//assets/images/seo1.webp"
+import seo2 from "..//..//..//assets/images/seo2.webp"
+import seo3 from "..//..//..//assets/images/seo3.webp"
+import seo4 from "..//..//..//assets/images/seo4.webp"
+import social1 from "..//..//..//assets/images/social1.webp"
+import social2 from "..//..//..//assets/images/social2.webp"
+import social3 from "..//..//..//assets/images/social3.webp"
+import social4 from "..//..//..//assets/images/social4.webp"
+import portfolio1 from "..//..//..//assets/images/portfolio1.webp"
+import portfolio2 from "..//..//..//assets/images/portfolio2.webp"
+import portfolio3 from "..//..//..//assets/images/portfolio3.webp"
+import portfolio4 from "..//..//..//assets/images/portfolio4.webp"
 
 export const projects: Project[] = [
 
@@ -20,15 +44,15 @@ export const projects: Project[] = [
         subtitle: "Sistema completo para pedidos online.",
 
         longDescription:
-            "Plataforma completa para hamburguerias com cardápio digital, carrinho de compras, painel administrativo, integração com WhatsApp e impressão automática de pedidos.",
+            "Plataforma para hamburgueria, com cardápio digital, carrinho de compras, painel administrativo, integração com WhatsApp, impressão de pedidos, otimização para pesquisas no Google e configuração de domínio personalizado.",
 
         image: mineiro,
 
         gallery: [
-            mineiro,
-            mineiro,
-            mineiro,
-            mineiro
+            mineiro1,
+            mineiro2,
+            mineiro3,
+            mineiro4
         ],
 
         category: "developer",
@@ -47,8 +71,7 @@ export const projects: Project[] = [
             "Carrinho de compras dinâmico",
             "Taxa de entrega por bairro",
             "Tempo de entrega configurável",
-            "Histórico de pedidos",
-            "Status do pedido em tempo real"
+            "Painel de pedidos"
         ],
 
         highlights: [
@@ -91,15 +114,15 @@ export const projects: Project[] = [
         subtitle: "Criação e gestão de lojas em marketplaces.",
 
         longDescription:
-            "Serviço voltado para criação, organização e operação de lojas virtuais em marketplaces, com gestão de produtos, cadastro de anúncios, organização do catálogo e acompanhamento da operação.",
+            "Serviço voltado para criação, organização e operação de lojas virtuais em marketplaces, com gestão de produtos, cadastro e otimização de anúncios, organização do catálogo e acompanhamento da operação.",
 
         image: mkp,
 
         gallery: [
-            mkp,
-            mkp,
-            mkp,
-            mkp
+            mkp1,
+            mkp2,
+            mkp3,
+            mkp4
         ],
 
         category: "developer",
@@ -114,16 +137,15 @@ export const projects: Project[] = [
         features: [
             "Criação de lojas em marketplaces",
             "Cadastro e organização de produtos",
-            "Gestão de anúncios",
-            "Organização de catálogo",
-            "Operação de lojas virtuais",
-            "Gestão de produtos e informações"
+            "Gestão e otimização de anúncios",
+            "Títulos estratégicos",
+            "Operação de lojas virtuais"
         ],
 
         highlights: [
             {
                 title: "Gestão de Produtos",
-                description: "Cadastro e organização dos produtos da loja.",
+                description: "Cadastro e organização estratégica dos produtos da loja.",
                 icon: "package"
             },
             {
@@ -133,7 +155,7 @@ export const projects: Project[] = [
             },
             {
                 title: "Gestão de Anúncios",
-                description: "Organização e gerenciamento dos anúncios publicados.",
+                description: "Criação e otimização de anúncios para maior relevância nas pesquisas.",
                 icon: "megaphone"
             },
             {
@@ -165,10 +187,10 @@ export const projects: Project[] = [
         image: portfolio,
 
         gallery: [
-            portfolio,
-            portfolio,
-            portfolio,
-            portfolio
+            portfolio1,
+            portfolio2,
+            portfolio3,
+            portfolio4
         ],
 
         category: "developer",
@@ -223,22 +245,22 @@ export const projects: Project[] = [
     {
         id: 4,
 
-        title: "Marketing Digital",
+        title: "Pesquisa e Otimização",
 
         description: "Planejamento, otimização e gestão de canais digitais para fortalecer marcas e gerar resultados.",
 
-        subtitle: "Estratégias digitais para fortalecer marcas.",
+        subtitle: "Estratégias baseadas em pesquisa e dados.",
 
         longDescription:
-            "Planejamento e gestão da presença digital de marcas, utilizando estratégias de SEO, análise de dados, ferramentas do Google, plataformas da Meta e produção de conteúdo para ampliar o alcance e fortalecer a presença online.",
+            "Pesquisa e análise de informações para identificar oportunidades, compreender comportamentos e orientar estratégias digitais com base em dados e resultados.",
 
         image: seo,
 
         gallery: [
-            seo,
-            seo,
-            seo,
-            seo
+            seo2,
+            seo3,
+            seo1,
+            seo4
         ],
 
         category: "developer",
@@ -263,22 +285,22 @@ export const projects: Project[] = [
         highlights: [
             {
                 title: "SEO",
-                description: "Otimização da presença digital melhorando a visibilidade nas buscas.",
+                description: "Otimização de termos para melhorar a visibilidade nas buscas.",
                 icon: "search"
             },
             {
                 title: "Analytics",
-                description: "Análise de dados para acompanhar resultados e identificar oportunidades.",
+                description: "Análise de dados e métricas para compreender resultados e identificar oportunidades.",
                 icon: "bar-chart"
             },
             {
                 title: "Google e Meta",
-                description: "Gestão de estratégias e campanhas nas principais plataformas digitais.",
+                description: "Análises para orientar estratégias nas principais plataformas digitais.",
                 icon: "globe"
             },
             {
-                title: "Social Media",
-                description: "Planejamento e gestão de conteúdos para fortalecer a presença nas redes sociais.",
+                title: "Pesquisa",
+                description: "Análise de dados para identificar oportunidades estratégicas",
                 icon: "share-2"
             }
         ],
@@ -300,15 +322,15 @@ export const projects: Project[] = [
         subtitle: "Identidade visual criada do zero.",
 
         longDescription:
-            "Projeto de criação de marca desenvolvido desde o conceito inicial, passando pela construção da identidade visual, definição de elementos gráficos e desenvolvimento de uma personalidade visual consistente para representar a empresa.",
+            "Projeto de criação de marca desenvolvido desde o conceito inicial, passando pela construção da identidade visual, definição de elementos gráficos e criação de uma linguagem visual consistente para representar a empresa.",
 
         image: marcas,
 
         gallery: [
-            marcas,
-            marcas,
-            marcas,
-            marcas
+            marcas1,
+            marcas2,
+            marcas3,
+            marcas4
         ],
 
         category: "designer",
@@ -370,15 +392,15 @@ export const projects: Project[] = [
         subtitle: "Conteúdo estratégico para redes sociais.",
 
         longDescription:
-            "Desenvolvimento de conteúdos visuais e estratégias para redes sociais, criando artes, campanhas e materiais alinhados à identidade da marca para fortalecer sua presença digital e gerar conexão com o público.",
+            "Desenvolvimento de conteúdos e estratégias para redes sociais, roteiros, fotos, vídeos e campanhas alinhados à identidade da marca para fortalecer sua presença digital e gerar conexão com o público.",
 
         image: social,
 
         gallery: [
-            social,
-            social,
-            social,
-            social
+            social1,
+            social2,
+            social3,
+            social4
         ],
 
         category: "designer",
@@ -386,8 +408,6 @@ export const projects: Project[] = [
         size: "medium",
 
         technologies: [
-            "Instagram",
-            "Facebook",
             "Conteúdo",
             "Design"
         ],
@@ -403,14 +423,14 @@ export const projects: Project[] = [
 
         highlights: [
             {
-                title: "Instagram",
+                title: "Redes Sociais",
                 description: "Criação de conteúdos visuais para fortalecer a presença da marca.",
-                icon: "instagram"
+                icon: "facebook"
             },
             {
-                title: "Facebook",
-                description: "Desenvolvimento de materiais para comunicação e divulgação.",
-                icon: "facebook"
+                title: "Foto e Vídeo",
+                description: "Produção de fotos e vídeos para comunicar e valorizar a marca.",
+                icon: "instagram"
             },
             {
                 title: "Conteúdo",

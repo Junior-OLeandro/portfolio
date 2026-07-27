@@ -7,13 +7,11 @@ export function About() {
 
             <section className="text-center py-5">
 
-                <h1 className="designer text-5xl uppercase tracking-[0.15em]">
+                <h1 className="designer text-5xl uppercase m-7 tracking-[0.15em]">
                     POR TRÁS DO CÓDIGO.
                 </h1>
 
-                <p className="developer mt-4 text-xl tracking-[0.25em]">
-                    Do conceito ao código.
-                </p>
+                
 
             </section>
 
