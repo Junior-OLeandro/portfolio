@@ -1,7 +1,9 @@
+import { PageTransition } from "../../components/ageTransition";
 import { timeline } from "../../constants/timeline";
 
 export function About() {
     return (
+        <PageTransition>
         <main className="flex flex-col h-[calc(100vh-120px)] overflow-hidden bg-black px-20">
 
 
@@ -169,5 +171,6 @@ export function About() {
             </section>
 
         </main>
+        </PageTransition>
     );
 }

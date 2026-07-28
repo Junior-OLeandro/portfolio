@@ -1,9 +1,10 @@
+import { PageTransition } from "../../components/ageTransition";
 import "..//Projects/projects.css";
 import { projects } from "./ProjectCard/Project";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 
 export const Projects = () => {
-    return <section className="ml-10 mr-10 ">
+    return <PageTransition><section className="ml-10 mr-10 ">
 
         <header className="designer flex justify-center ml-10 mr-10 mb-7 mt-7">
 
@@ -34,4 +35,5 @@ export const Projects = () => {
 
 
     </section>
+    </PageTransition>
 }

@@ -1,8 +1,10 @@
 import { FiMail, FiLinkedin, FiGithub} from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import { PageTransition } from "../../components/ageTransition";
 
 export const Contact = () => {
     return (
+        <PageTransition>
         <main className="h-[calc(100vh-120px)] px-10">
 
 
@@ -159,5 +161,6 @@ export const Contact = () => {
             </section>
 
         </main>
+        </PageTransition>
     );
 }
