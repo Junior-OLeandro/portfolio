@@ -50,7 +50,9 @@ export function MainProject({ project }: Props) {
                                 className="p-2 rounded-md border-2 border-gray-700"
                             >
                                 {tech}
+                                
                             </span>
+                            
                         ))}
                     </div>
 

@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
         github: "",
 
-        demo: "",
+        demo: "mineiroloja.com.br",
 
         nextProjectId: 2
     },
