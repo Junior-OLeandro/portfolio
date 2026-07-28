@@ -36,6 +36,8 @@ export const projects: Project[] = [
 
     {
         id: 1,
+        order: 1,
+        animation: "slideLeft",
 
         title: "Sistema de pedidos",
 
@@ -106,6 +108,8 @@ export const projects: Project[] = [
 
     {
         id: 2,
+        order: 2,
+        animation: "fadeUp",
 
         title: "Gestão de Marketplaces",
 
@@ -174,6 +178,8 @@ export const projects: Project[] = [
 
     {
         id: 3,
+        order: 3,
+        animation: "slideLeft",
 
         title: "Portfólio Pessoal",
 
@@ -244,6 +250,8 @@ export const projects: Project[] = [
 
     {
         id: 4,
+        order: 4,
+        animation: "slideLeft",
 
         title: "Pesquisa e Otimização",
 
@@ -314,6 +322,8 @@ export const projects: Project[] = [
 
     {
         id: 5,
+        order: 5,
+        animation: "slideLeft",
 
         title: "Design de marca",
 
@@ -384,6 +394,8 @@ export const projects: Project[] = [
 
     {
         id: 6,
+        order: 6,
+        animation: "slideLeft",
 
         title: "Social Media",
 

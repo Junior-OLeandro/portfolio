@@ -1,19 +1,29 @@
+import type { AnimationVariant } from "../animations/variants";
+
+
 export type DesignerSideProps = {
     position: number;
-}
+};
 
 export type DeveloperSideProps = {
     position: number;
-}
+};
 
 export type DividerProps = {
     position: number;
     setPosition: React.Dispatch<React.SetStateAction<number>>;
-}
+};
 
 export type ProjectCategory = "developer" | "designer";
 
 export type ProjectSize = "large" | "medium" | "small";
+
+
+export interface ProjectHighlight {
+    title: string;
+    description: string;
+    icon: string;
+}
 
 export interface Project {
     id: number;
@@ -21,6 +31,8 @@ export interface Project {
     title: string;
 
     description: string;
+
+    subtitle?: string;
 
     longDescription?: string;
 
@@ -32,9 +44,18 @@ export interface Project {
 
     size: ProjectSize;
 
+    /** Ordem da animação */
+    order: number;
+
+    /** Animação utilizada pelo card */
+    animation: AnimationVariant;
+
+
     technologies: string[];
 
     features?: string[];
+
+    highlights?: ProjectHighlight[];
 
     github?: string;
 
@@ -43,12 +64,4 @@ export interface Project {
     nextProjectId?: number;
 
     icon?: string;
-
-    subtitle?: string;
-
-    highlights?: {
-        title: string;
-        description: string;
-        icon: string;
-    }[];
 }

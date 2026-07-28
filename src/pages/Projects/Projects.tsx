@@ -1,12 +1,13 @@
-import { PageTransition } from "../../components/ageTransition";
+
+import { Animated } from "../../components/animations/Animated";
 import "..//Projects/projects.css";
 import { projects } from "./ProjectCard/Project";
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 
 export const Projects = () => {
-    return <PageTransition><section className="ml-10 mr-10 ">
-
-        <header className="designer flex justify-center ml-10 mr-10 mb-7 mt-7">
+    return <section className="ml-10 mr-10 ">
+<Animated animation="fadeUp">
+        <section className="designer flex justify-center ml-10 mr-10 mb-7 mt-7">
 
             <h2 className="font-bold ">
                 Alguns dos trabalhos que desenvolvi unindo estratégia,
@@ -14,12 +15,10 @@ export const Projects = () => {
             </h2>
 
             
-        </header>
-
-
+        </section>
     
 
-            <div className="projects-grid">
+            <section className="projects-grid">
 
                 {projects.map(project => (
 
@@ -30,10 +29,10 @@ export const Projects = () => {
 
                 ))}
 
-            </div>
+            </section>
 
 
-
+</Animated>
     </section>
-    </PageTransition>
+
 }

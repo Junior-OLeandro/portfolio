@@ -1,6 +1,6 @@
 import { FiMail, FiLinkedin, FiGithub} from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import { PageTransition } from "../../components/ageTransition";
+import { PageTransition } from "../../components/animations/PageTransition";
 
 export const Contact = () => {
     return (

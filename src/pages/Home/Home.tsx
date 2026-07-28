@@ -1,10 +1,10 @@
-import { PageTransition } from "../../components/ageTransition";
+import { PageTransition } from "../../components/animations/PageTransition";
 import { SplitScreen } from "./SplitScreen/SplitScreen";
 
 export function Home() {
     return (
-        <PageTransition>
+
             <SplitScreen />
-        </PageTransition>
+
         );
 }

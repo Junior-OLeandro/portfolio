@@ -1,4 +1,4 @@
-import { PageTransition } from "../../components/ageTransition";
+import { PageTransition } from "../../components/animations/PageTransition";
 import { timeline } from "../../constants/timeline";
 
 export function About() {
