@@ -251,7 +251,7 @@ export const projects: Project[] = [
     {
         id: 4,
         order: 4,
-        animation: "slideLeft",
+        animation: "slideRight",
 
         title: "Pesquisa e Otimização",
 
@@ -323,7 +323,7 @@ export const projects: Project[] = [
     {
         id: 5,
         order: 5,
-        animation: "slideLeft",
+        animation: "fadeUp",
 
         title: "Design de marca",
 
@@ -395,7 +395,7 @@ export const projects: Project[] = [
     {
         id: 6,
         order: 6,
-        animation: "slideLeft",
+        animation: "slideRight",
 
         title: "Social Media",
 
