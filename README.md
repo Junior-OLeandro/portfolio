@@ -1,75 +1,162 @@
-# React + TypeScript + Vite
+# 💼 Portfólio | Junior Oliveira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portfólio moderno e interativo desenvolvido para representar duas áreas da minha carreira: **Designer** e **Developer**.
 
-Currently, two official plugins are available:
+O projeto foi pensado para oferecer uma experiência visual diferenciada, utilizando animações suaves, identidade visual própria para cada área e uma navegação intuitiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 Home dividida entre Designer e Developer
+- 🖼️ Troca dinâmica da imagem central
+- 🎭 Identidade visual exclusiva para cada área
+- ⚡ Transições suaves entre páginas
+- 📚 Página "Sobre" com timeline interativa
+- 💼 Página de Projetos
+- 📄 Página individual para cada projeto
+- 📷 Galeria de imagens dos projetos
+- 📬 Página de Contato
+- 📱 Layout totalmente responsivo
+- 🌙 Interface moderna inspirada em portfólios premium
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🛠️ Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- CSS Variables
+- CSS Animations
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+# 🎨 Identidade Visual
+
+O projeto utiliza dois temas distintos.
+
+## Designer
+
+- Verde 
+- Syne
+- Manrope
+
+Representa criatividade, branding e design.
+
+---
+
+## Developer
+
+- Roxo 
+- Space Grotesk
+- JetBrains Mono
+
+Representa código, lógica e desenvolvimento.
+
+---
+
+# 📄 Páginas
+
+## Home
+
+- Split Screen
+- Foto central dinâmica
+- Linha divisória animada
+- Navegação entre Designer e Developer
+
+---
+
+## Sobre
+
+- Timeline profissional
+- Evolução da carreira
+- Tecnologias
+- Competências
+
+---
+
+## Projetos
+
+- Grid responsivo
+- Cards animados
+- Categorias Designer / Developer
+
+---
+
+## Detalhes
+
+Cada projeto possui uma página própria contendo:
+
+- Mockup principal
+- Descrição
+- Tecnologias
+- Recursos
+- Galeria
+- GitHub
+- Demo
+
+---
+
+## Contato
+
+- Informações para contato
+- Formulário
+- Links para redes sociais
+
+---
+
+# ⚙️ Como executar
+
+Clone o projeto
+
+```bash
+git clone https://github.com/Junior-OLeandro/portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Entre na pasta
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd portfolio
 ```
+
+Instale as dependências
+
+```bash
+npm install
+```
+
+Execute
+
+```bash
+npm run dev
+```
+
+---
+
+# 🎯 Objetivo
+
+Este projeto foi desenvolvido para apresentar minha evolução profissional, unindo mais de 14 anos de experiência em Design com minha transição para o desenvolvimento Front-end.
+
+A proposta é demonstrar não apenas projetos, mas também organização de código, arquitetura de componentes, experiência do usuário e atenção aos detalhes visuais.
+
+---
+
+# 👨‍💻 Autor
+
+### Junior Oliveira
+
+Desenvolvedor Front-end • Designer Gráfico
+
+- GitHub: https://github.com/Junior-OLeandro
+- LinkedIn: https://www.linkedin.com/in/junior-oleandro/
+
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
