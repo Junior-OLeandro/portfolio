@@ -27,30 +27,28 @@ export const Contact = () => {
 
                     <aside className="developer flex flex-col">
                         <Animated animation="slideLeft">
-                            <h2 className="designer text-4xl">
+                            <h2 className="designer text-4xl 4xl:text-5xl 4xl:max-w-[700px]">
                                 Soluções que fazem sentido.
                             </h2>
 
-                            <p className="mt-3 max-w-[400px] leading-6">
+                            <p className="mt-3 max-w-[400px] leading-6 4xl:leading-8 4xl:text-[22px] 4xl:max-w-[600px]">
                                 Se você busca unir estratégia, design e desenvolvimento em um único projeto, estou pronto para transformar sua ideia em uma experiência digital marcante.
                             </p>
 
-                            <div className="mt-7 space-y-5 w-40 ">
+                            <div className="mt-7 4xl:mt-10 space-y-5 w-40 4xl:w-60">
 
                                 <a
                                     href="mailto:junior.oleandrobq@gmail.com"
                                     className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300 "
                                 >
-                                    <FiMail className="text-2xl" />
+                                    <FiMail className="text-2xl 4xl:text-4xl" />
 
                                     <div>
-                                        <h3 className="text-sm uppercase tracking-widest">
+                                        <h3 className="text-sm 4xl:text-2xl uppercase tracking-widest">
                                             E-mail
                                         </h3>
 
-                                        <p className="text-xl">
 
-                                        </p>
                                     </div>
                                 </a>
 
@@ -60,16 +58,13 @@ export const Contact = () => {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300 "
                                 >
-                                    <FaWhatsapp className="text-2xl" />
+                                    <FaWhatsapp className="text-2xl 4xl:text-4xl" />
 
                                     <div>
-                                        <h3 className="text-sm uppercase tracking-widest">
+                                        <h3 className="text-sm uppercase tracking-widest 4xl:text-2xl">
                                             WhatsApp
                                         </h3>
 
-                                        <p className="text-xl">
-
-                                        </p>
                                     </div>
                                 </a>
 
@@ -79,16 +74,13 @@ export const Contact = () => {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300"
                                 >
-                                    <FiLinkedin className="text-2xl " />
+                                    <FiLinkedin className="text-2xl 4xl:text-4xl" />
 
                                     <div>
-                                        <h3 className="text-sm uppercase tracking-widest">
+                                        <h3 className="text-sm uppercase tracking-widest 4xl:text-2xl">
                                             LinkedIn
                                         </h3>
 
-                                        <p className="text-xl">
-
-                                        </p>
                                     </div>
                                 </a>
 
@@ -98,16 +90,13 @@ export const Contact = () => {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300"
                                 >
-                                    <FiGithub className="text-2xl" />
+                                    <FiGithub className="text-2xl 4xl:text-4xl" />
 
                                     <div>
-                                        <h3 className="text-sm uppercase tracking-widest">
+                                        <h3 className="text-sm uppercase tracking-widest 4xl:text-2xl">
                                             GitHub
                                         </h3>
 
-                                        <p className="text-xl">
-
-                                        </p>
                                     </div>
                                 </a>
 
@@ -120,7 +109,7 @@ export const Contact = () => {
                         <form
                             action="https://formspree.io/f/xbdnqdzj"
                             method="POST"
-                            className="designer w-[400px] max-w-[450px] space-y-4"
+                            className="designer w-[400px] space-y-4 4xl:w-[600px] 4xl:text-2xl"
                         >
                             <input
                                 type="text"

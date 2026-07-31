@@ -1,6 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-3xl: 90rem; /* 1440px */
+  --breakpoint-4xl: 1800px;
+}
+
 @import "./reset.css";
 @import "./typography.css";
 @import "./variables.css";
 @import "./themes.css";
-@import "./animations.css"
+@import "./animations.css";

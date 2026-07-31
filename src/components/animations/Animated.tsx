@@ -14,28 +14,15 @@ interface Props {
     className?: string;
 }
 
-export function Animated({
-    children,
-    animation,
-    delay = 0,
-    transition,
-    className,
-}: Props) {
+export function Animated({ children, animation, delay = 0, transition, className }: Props) {
     return (
         <motion.div
             className={className}
             variants={variants[animation]}
             initial="hidden"
             whileInView="visible"
-            viewport={{
-                once: true,
-                amount: 0.2,
-            }}
-            transition={{
-                ...defaultTransition,
-                ...transition,
-                delay,
-            }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ ...defaultTransition, ...transition, delay }}
         >
             {children}
         </motion.div>

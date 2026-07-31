@@ -12,26 +12,26 @@ interface Props {
 export function MainProject({ project }: Props) {
     return (
 
-        <main className={` ${project.category} grid grid-rows-[360px_2px_1fr] gap-1`}>
+        <main className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full`}>
 
-            <section className="grid grid-cols-[45%_55%] h-[330px] ">
+            <section className="grid grid-cols-[35%_65%] 3xl:grid-cols-[40%_60%]">
 
 
-                <div className="p-8 overflow-hidden flex items-center justify-center">
+                <div className="flex items-center justify-center">
                     <Animated animation="slideLeft">
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="max-w-full max-h-80  object-contain"
+                            className="max-h-80 p-3"
                         />
                     </Animated>
                 </div>
 
                 <Animated animation="slideRight">
-                    <div className="p-5 flex flex-col max-h-50">
+                    <div className="flex flex-col ">
 
                         <div>
-                            <h1 className="text-3xl font-bold">
+                            <h1 className="font-bold md:text-[18px] lg:text-[22px] xl:text-[26px]  2xl:text-[30px]">
                                 {project.subtitle}
                             </h1>
 
@@ -39,12 +39,12 @@ export function MainProject({ project }: Props) {
                         </div>
 
 
-                        <p className="mt-3 text-1xl leading-7 ">
+                        <p className="mt-2 leading-6  md:text-[14px]  lg:text-[16px]  3xl:text-[20px] 2xl:text-[20px] 4xl:mt-4 4xl:leading-8 max-w-[750px] 2xl:max-w-[920px]">
                             {project.longDescription}
                         </p>
 
 
-                        <div className="mt-3 flex flex-wrap gap-3">
+                        <div className="mt-3 flex flex-wrap gap-3 2xl:mt-5">
                             {project.technologies.map((tech) => (
                                 <span
                                     key={tech}
@@ -58,7 +58,7 @@ export function MainProject({ project }: Props) {
                         </div>
 
 
-                        <div className="grid gap-3 grid-cols-2 mt-3 max-w-[700px]">
+                        <div className="grid gap-3 grid-cols-2 my-3  max-w-[800px] 2xl:max-w-[900px]  4xl:mt-7">
 
                             {project.highlights?.map((item) => {
 
@@ -67,7 +67,7 @@ export function MainProject({ project }: Props) {
                                 return (
                                     <div
                                         key={item.title}
-                                        className="flex gap-3"
+                                        className="flex gap-2 4xl:mt-5"
                                     >
 
                                         <div className="mt-1">
@@ -75,11 +75,11 @@ export function MainProject({ project }: Props) {
                                         </div>
 
                                         <div>
-                                            <h4 className="font-semibold">
+                                            <h4 className="font-semibold  3xl:text-[20px] 2xl:text-[24px]">
                                                 {item.title}
                                             </h4>
 
-                                            <p className="text-sm">
+                                            <p className="text-[16px] 3xl:text-[18px] 2xl:text-[22px]">
                                                 {item.description}
                                             </p>
                                         </div>
@@ -105,12 +105,12 @@ export function MainProject({ project }: Props) {
                 }}
             />
 
-            <section className="grid grid-cols-[400px_2px_1fr]  max-h-55 mt-5">
+            <section className="grid grid-cols-[420px_2px_1fr] min-h-[220px] gap-2 4xl:mt-5 2xl:min-h-[350px] ">
 
                 <Animated animation="slideLeft">
                     <aside className="ml-5">
 
-                        <h3 className="text-2xl font-semibold mb-2 ">
+                        <h3 className="text-2xl font-semibold 3xl:mb-1 4xl:text-[24px] ">
                             Recursos
                         </h3>
 
@@ -120,7 +120,7 @@ export function MainProject({ project }: Props) {
 
                                 <li
                                     key={feature}
-                                    className="flex items-center text-[var(--text-secondary)]"
+                                    className="flex items-center text-[var(--text-secondary)] text-[16px] 4xl:text-[20px]"
                                 >
                                     • {feature}
                                 </li>
@@ -146,12 +146,12 @@ export function MainProject({ project }: Props) {
 
 
 
-                <section className="rounded-2xl relative m-3 justify-between">
+                <section className="rounded-2xl relative m-3 justify-between ">
 
 
 
-                        <Animated animation="fadeUp">
-                    <div className="grid grid-cols-4 gap-8 place-items-center object-contain">
+                    <Animated animation="fadeUp">
+                        <div className="grid grid-cols-4 gap-8 place-items-center object-contain">
                             {project.gallery?.map((image) => (
 
                                 <img
@@ -161,8 +161,8 @@ export function MainProject({ project }: Props) {
                                 />
 
                             ))}
-                    </div>
-                        </Animated>
+                        </div>
+                    </Animated>
 
 
                 </section>

@@ -14,20 +14,20 @@ export function ProjectCard({ project }: Props) {
                 alt={project.title}
             />
 
-            <div className="overlay ">
+            <div className="overlay">
 
                 
 
-                <h3>{project.title}</h3>
+                <h3 className="font-bold md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px]">{project.title}</h3>
 
-                <p>{project.description}</p>
+                <p className="md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[20px]">{project.description}</p>
 
                 <div className="technologies">
 
                     {project.technologies.map(tech => (
                         <span
                             key={tech}
-                            className="tech"
+                            className="tech md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[20px]"
                         >
                             {tech}
                         </span>
@@ -37,7 +37,7 @@ export function ProjectCard({ project }: Props) {
 
                 <Link
                     to={`/projects/${project.id}`}
-                    className="project-link w-40 mt-1 rounded-full p-2"
+                    className="project-link w-40 mt-2 rounded-full p-2 text-center"
                 >
                     Ver Projeto →
                 </Link>

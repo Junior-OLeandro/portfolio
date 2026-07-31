@@ -41,7 +41,7 @@ export const projects: Project[] = [
 
         title: "Sistema de pedidos",
 
-        description: "Sistema completo de pedidos online com painel administrativo e integração ao WhatsApp.",
+        description: "Sistema completo para pedidos online.",
 
         subtitle: "Sistema completo para pedidos online.",
 
@@ -109,11 +109,11 @@ export const projects: Project[] = [
     {
         id: 2,
         order: 2,
-        animation: "fadeUp",
+        animation: "slideLeft",
 
         title: "Gestão de Marketplaces",
 
-        description: "Criação e operação de lojas virtuais em marketplaces.",
+        description: "Criação e operação de lojas virtuais.",
 
         subtitle: "Criação e gestão de lojas em marketplaces.",
 
@@ -179,11 +179,11 @@ export const projects: Project[] = [
     {
         id: 3,
         order: 3,
-        animation: "slideLeft",
+        animation: "slideRight",
 
         title: "Portfólio Pessoal",
 
-        description: "Portfólio responsivo desenvolvido para apresentar meus projetos, habilidades e experiência de forma moderna e intuitiva.",
+        description: "Portfólio moderno para apresentação profissional.",
 
         subtitle: "Portfólio moderno para apresentação profissional.",
 
@@ -251,11 +251,11 @@ export const projects: Project[] = [
     {
         id: 4,
         order: 4,
-        animation: "slideRight",
+        animation: "fadeUp",
 
         title: "Pesquisa e Otimização",
 
-        description: "Planejamento, otimização e gestão de canais digitais para fortalecer marcas e gerar resultados.",
+        description: "Estratégias baseadas em pesquisa e dados.",
 
         subtitle: "Estratégias baseadas em pesquisa e dados.",
 
@@ -323,13 +323,13 @@ export const projects: Project[] = [
     {
         id: 5,
         order: 5,
-        animation: "fadeUp",
+        animation: "slideLeft",
 
         title: "Design de marca",
 
-        description: "Criação de marca do zero, desenvolvendo sua identidade visual e personalidade.",
+        description: "Identidade visual com personalidade.",
 
-        subtitle: "Identidade visual criada do zero.",
+        subtitle: "Identidade visual.",
 
         longDescription:
             "Projeto de criação de marca desenvolvido desde o conceito inicial, passando pela construção da identidade visual, definição de elementos gráficos e criação de uma linguagem visual consistente para representar a empresa.",
@@ -395,11 +395,11 @@ export const projects: Project[] = [
     {
         id: 6,
         order: 6,
-        animation: "slideRight",
+        animation: "fadeUp",
 
         title: "Social Media",
 
-        description: "Criação de conteúdos estratégicos, artes e campanhas para fortalecer a presença da marca nas redes sociais.",
+        description: "Conteúdo estratégico para redes sociais.",
 
         subtitle: "Conteúdo estratégico para redes sociais.",
 
