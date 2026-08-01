@@ -20,13 +20,13 @@ export function DesignerSide({ position }: DesignerSideProps) {
 
             <div className="mx-auto h-full max-w-full">
 
-                <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
                     <Animated animation="slideLeft">
-                        <h3 className="designer text-2xl tracking-[0.2em] uppercase font-light">
+                <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
+                        <h3 className="designer text-2xl tracking-[0.2em] uppercase font-light 4xl:text-3xl">
                             DO CONCEITO AO CÓDIGO.
                         </h3>
-                    </Animated>
                 </div>
+                    </Animated>
 
 
 
@@ -56,27 +56,27 @@ export function DesignerSide({ position }: DesignerSideProps) {
                             <img
                                 src={designerIcon}
                                 alt="Designer"
-                                className="mb-8 w-36"
+                                className="mb-4 w-30 4xl:w-40 4xl:mb-10"
                             />
 
-                            <h1 className="mb-6 text-7xl">
+                            <h1 className="mb-4 text-6xl 4xl:text-8xl 4xl:mb-10">
                                 Designer
                             </h1>
 
-                            <h2 className="mb-8 text-3xl leading-tight">
+                            <h2 className="mb-4 text-3xl 4xl:text-5xl leading-tight 4xl:mb-10">
                                 Criatividade que dá
                                 <br />
                                 forma às ideias.
                             </h2>
 
-                            <p className="mb-10 w-72 text-lg leading-8">
+                            <p className="mb-4 w-[300px] text-[18px] leading-8 4xl:text-[22px] 4xl:w-[350px] 4xl:mb-10">
                                 Mais de 14 anos criando marcas,
                                 interfaces e experiências que unem
                                 estratégia e estética.
                             </p>
 
                             <ul>
-                                <li className="theme-button">
+                                <li className="theme-button text-[20px] 4xl:text-2xl">
                                     <Link to="/projects">Projetos ↗</Link>
                                 </li>
                             </ul>
@@ -95,7 +95,7 @@ export function DesignerSide({ position }: DesignerSideProps) {
                         <img
                             src={designerProject}
                             alt="Projeto"
-                            className="w-[420px] opacity-60"
+                            className="w-[350px] 3xl:w-[400px] opacity-60"
                         />
                     </div>
                 </div>

@@ -17,7 +17,7 @@ export function DeveloperSide({ position }: DeveloperSideProps) {
             <div className="mx-auto h-full max-w-full ">
                 <Animated animation="slideRight">
                     <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
-                        <h3 className="developer text-2xl tracking-[0.2em] uppercase font-light">
+                        <h3 className="developer text-2xl tracking-[0.2em] uppercase font-light 4xl:text-3xl">
                             DO CONCEITO AO CÓDIGO.
                         </h3>
                     </div>
@@ -40,7 +40,7 @@ export function DeveloperSide({ position }: DeveloperSideProps) {
 
                     <div className="flex flex-col  pl-12 xl:pl-20 ">
 
-                        <span className="mb-8 text-[21px]">
+                        <span className="mb-5 text-[21px] 4xl:mb-10">
                             Código • Performance • Experiência
                         </span>
 
@@ -58,25 +58,25 @@ export function DeveloperSide({ position }: DeveloperSideProps) {
                             <img
                                 src={developerIcon}
                                 alt="Developer"
-                                className="mb-8 w-36 "
+                                className="mb-5 w-36 4xl:w-46 4xl:mb-10"
                             />
 
-                            <h1 className="mb-6 text-6xl">
+                            <h1 className="mb-5 text-6xl 4xl:text-7xl 4xl:mb-10">
                                 Developer
                             </h1>
 
-                            <h2 className="mb-8 text-2xl leading-tight text-end">
+                            <h2 className="mb-5 text-2xl leading-tight text-end 4xl:text-[42px] 4xl:mb-10">
                                 Código que transforma
                                 <br />
                                 ideias em realidade.
                             </h2>
 
-                            <p className="mb-10 w-72 text-lg leading-8 text-end">
+                            <p className="mb-5 w-[300px] text-[18px] leading-8 4xl:text-[22px] 4xl:w-[400px] text-end 4xl:mb-10">
                                 Transformo ideias em aplicações  modernas, funcionais e escaláveis.
                             </p>
 
                             <ul>
-                                <li className="theme-button">
+                                <li className="theme-button text-[20px] 4xl:text-2xl">
                                     <Link to="/projects">Projetos ↖</Link>
                                 </li>
                             </ul>
