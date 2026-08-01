@@ -1,6 +1,12 @@
 /* =====================================================
    DESIGNER THEME
 ===================================================== */
+.nav-active {
+    color: var(--designer-primary);
+}
+
+
+
 
 .designer {
   /* Cor padrão dos textos e ícones */
@@ -40,8 +46,7 @@
 
 
 .designer a:hover,
-.designer button:hover,
-.designer link:hover  {
+.designer button:hover{
   background: var(--designer-primary);
   color: var(--developer-primary);
   transform: translateY(-2px);
@@ -75,8 +80,7 @@
   font-family: var(--theme-title);
   
 }
-.developer button,
-.developer link {
+.developer button{
   padding: 1rem 2rem;
   border-radius: var(--radius-md);
   transition: var(--transition-normal);
@@ -91,8 +95,7 @@
 }
 
 .developer a:hover,
-.developer button:hover,
-.developer link:hover {
+.developer button:hover {
   background: var(--developer-hover);
   color: var(--designer-hover);
   transform: translateY(-2px);
@@ -104,8 +107,7 @@
 ===================================================== */
 
 .theme-button a,
-.theme-button button,
-.theme-button link {
+.theme-button button {
 
 
   padding: 1rem 2rem;
