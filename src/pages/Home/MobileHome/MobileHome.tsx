@@ -87,7 +87,7 @@ export function MobileHome() {
                 <div className="text-center ">
                     <Animated animation="fadeUp">
                         <h1 className="text-2xl tracking-[0.1em] uppercase font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
-                            DO DESIGN <br />AO DESENVOLVIMENTO
+                            UMA TRAJETÓRIA <br /> EM EVOLUÇÃO
                         </h1>
                     </Animated>
 

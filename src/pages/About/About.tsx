@@ -10,7 +10,7 @@ export function About() {
 
             <section className="text-center ">
                 <Animated animation="fadeUp">
-                    <h1 className="designer text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase m-7 tracking-[0.15em]">
+                    <h1 className="md:text-3xl lg:text-4xl xl:text-5xl uppercase m-7 tracking-[0.15em]font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
                         DO DESIGN AO DESENVOLVIMENTO
                     </h1>
                 </Animated>
