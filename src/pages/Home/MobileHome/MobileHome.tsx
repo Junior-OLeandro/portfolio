@@ -13,7 +13,7 @@ export function MobileHome() {
                     <div className="my-3 align-middle z-45 whitespace-nowrap pointer-events-none">
                         <h3 className="text-2xl tracking-[0.1em] uppercase font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent">
                             DO CONCEITO <br />
-                            AO CÓDIGO.
+                            AO CÓDIGO
                         </h3>
                     </div>
                 </Animated>
@@ -25,34 +25,16 @@ export function MobileHome() {
 
                     <Animated animation="slideLeft">
                         <div
-                            className="
-                absolute
-                top-15
-                left-[clamp(16px,10vw,80px)]
-
-                flex
-                flex-col
-                items-center
-                gap-3
-            "
+                            className=" absolute top-15 left-[clamp(16px,10vw,80px)] flex flex-col items-center gap-3"
                         >
                             <img
                                 src={designerIcon}
                                 alt="Designer"
-                                className="
-                    w-[clamp(32px,15vw,106px)]
-                    h-auto
-                "
+                                className=" w-[clamp(32px,15vw,106px)] h-auto"
                             />
 
                             <span
-                                className="
-                    text-[clamp(0.7rem,3vw,1.5rem)]
-                    font-bold
-                    uppercase
-                    tracking-[0.15em]
-                    text-[var(--designer-primary)]
-                "
+                                className=" text-[clamp(0.7rem,3vw,1.5rem)] font-bold uppercase tracking-[0.15em] text-[var(--designer-primary)]"
                             >
                                 Designer
                             </span>
@@ -61,34 +43,16 @@ export function MobileHome() {
 
                     <Animated animation="slideRight">
                         <div
-                            className="
-                absolute
-                top-15
-                right-[clamp(16px,10vw,80px)]
-
-                flex
-                flex-col
-                items-center
-                gap-3
-            "
+                            className=" absolute top-15 right-[clamp(16px,10vw,80px)] flex flex-col items-center gap-3"
                         >
                             <img
                                 src={developerIcon}
                                 alt="Developer"
-                                className="
-                    w-[clamp(32px,15vw,106px)]
-                    h-auto
-                "
+                                className="w-[clamp(32px,15vw,106px)] h-auto"
                             />
 
                             <span
-                                className="
-                    text-[clamp(0.7rem,3vw,1.5rem)]
-                    font-bold
-                    uppercase
-                    tracking-[0.1em]
-                    text-[var(--developer-primary)]
-                "
+                                className=" text-[clamp(0.7rem,3vw,1.5rem)] font-bold uppercase tracking-[0.1em] text-[var(--developer-primary)]"
                             >
                                 Developer
                             </span>
@@ -101,21 +65,7 @@ export function MobileHome() {
                         <img
                             src={portraitMobile}
                             alt="Retrato Junior Oliveira"
-                            className="
-                absolute
-                bottom-0
-                left-1/2
-                -translate-x-1/2
-
-                h-[75%]
-                w-auto
-                max-w-none
-
-                object-contain
-                select-none
-                pointer-events-none
-            "
-            
+                            className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[75%] w-auto max-w-none object-contain select-none pointer-events-none"
                         />
                     </Animated>
                 </div>
@@ -133,7 +83,7 @@ export function MobileHome() {
 <section className="text-center ">
                 <Animated animation="fadeUp">
                     <h1 className="designer text-3xl uppercase m-7 tracking-[0.15em]">
-                        POR TRÁS DO CÓDIGO.
+                        DO DESIGN AO DESENVOLVIMENTO
                     </h1>
                 </Animated>
 

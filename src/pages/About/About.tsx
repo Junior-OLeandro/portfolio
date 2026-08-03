@@ -11,7 +11,7 @@ export function About() {
             <section className="text-center ">
                 <Animated animation="fadeUp">
                     <h1 className="designer text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase m-7 tracking-[0.15em]">
-                        POR TRÁS DO CÓDIGO.
+                        DO DESIGN AO DESENVOLVIMENTO
                     </h1>
                 </Animated>
 

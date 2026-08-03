@@ -23,7 +23,7 @@ export function DesignerSide({ position }: DesignerSideProps) {
                     <Animated animation="slideLeft">
                 <div className="absolute top-10 left-1/2 z-45 -translate-x-[53%] whitespace-nowrap pointer-events-none">
                         <h3 className="designer text-2xl tracking-[0.2em] uppercase font-light 4xl:text-3xl">
-                            DO CONCEITO AO CÓDIGO.
+                            DO CONCEITO AO CÓDIGO
                         </h3>
                 </div>
                     </Animated>
