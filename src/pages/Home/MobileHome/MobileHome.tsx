@@ -4,10 +4,14 @@ import portraitMobile from "..//..//..//assets/images/foto.webp"
 import designerIcon from "/src/assets/images/vetor-designer.svg";
 import developerIcon from "/src/assets/images/vetor-developer.svg";
 import { timeline } from "../../../constants/timeline";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 
 export function MobileHome() {
     return (
-        <main>
+
+        <main className="overflow-x-hidden w-full">
             <header>
                 <Animated animation="fadeUp">
                     <div className="my-3 align-middle z-45 whitespace-nowrap pointer-events-none">
@@ -69,126 +73,156 @@ export function MobileHome() {
                         />
                     </Animated>
                 </div>
-<div
-            className="absolute bottom-0 left-0 h-[2px] w-full"
-            style={{
-                background:
-                    "linear-gradient(90deg, var(--designer-primary), var(--developer-primary))",
-            }}
-        />
+                <div
+                    className="absolute bottom-0 left-0 h-[2px] w-full"
+                    style={{
+                        background:
+                            "linear-gradient(90deg, var(--designer-primary), var(--developer-primary))",
+                    }}
+                />
 
             </section>
 
+            <section>
+                <div className="text-center ">
+                    <Animated animation="fadeUp">
+                        <h1 className="text-2xl tracking-[0.1em] uppercase font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
+                            DO DESIGN <br />AO DESENVOLVIMENTO
+                        </h1>
+                    </Animated>
 
-<section className="text-center ">
-                <Animated animation="fadeUp">
-                    <h1 className="designer text-3xl uppercase m-7 tracking-[0.15em]">
-                        DO DESIGN AO DESENVOLVIMENTO
-                    </h1>
-                </Animated>
+                </div>
 
-            </section>
+                <section className="relative flex flex-1 h-full">
 
-            <section className="relative flex flex-1 h-full">
-            
-            
-                                <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[3px] rounded-full bg-gradient-to-b from-[var(--designer-primary)] to-[var(--developer-primary)]" />
-            
-            
+
+                    <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[3px] rounded-full bg-gradient-to-b from-[var(--designer-primary)] to-[var(--developer-primary)]" />
+
+
+                    <div
+                        className="relative grid flex-1 "
+                        style={{
+                            gridTemplateRows: `repeat(${timeline.length}, minmax(0,1fr))`,
+                        }}
+                    >
+                        {timeline.map((item) => {
+                            const [openId, setOpenId] = useState<number | null>(null);
+                            const isOpen = openId === item.id;
+
+                            return (
+
+
+
                                 <div
-                                    className="relative grid flex-1 "
-                                    style={{
-                                        gridTemplateRows: `repeat(${timeline.length}, minmax(0,1fr))`,
-                                    }}
+                                    key={item.id}
+                                    className="grid grid-cols-[minmax(0,1fr)_20px_minmax(0,1fr)] items-center"
                                 >
-                                    {timeline.map((item) => (
-            
-                                        <div
-                                            key={item.id}
-                                            className="group grid grid-cols-[minmax(0,1fr)_20px_minmax(0,1fr)] items-center"
-                                        >
-            
-            
-            
-                                            <div className="designer flex justify-end ">
-            
-                                                {item.color === "designer" && (
-            
-                                                    <div className="relative max-w-[300px] text-right pr-5">
-                                                        <Animated animation="fadeUp">
-                                                            <span className=" md:text-[13px]  xl:text-[15px] 2xl:text-[18px] leading-8 ">
-                                                                {item.year}
-                                                            </span>
-            
-                                                            <h3 className=" md:text-[15px]  xl:text-[20px] 2xl:text-[25px] leading-8 font-semibold">
-                                                                {item.title}
-                                                            </h3>
-            
-                                                        </Animated>
-                                                        <div
-                                                            className="absolute top-0 right-full mr-5 -translate-y-1/2 w-[330px] rounded-xl border-2 border-(--designer-primary) bg-black p-4  opacity-0 invisible translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 
-                                            "
-                                                        >
-                                                            <p className=" md:text-[13px]  xl:text-[15px] 2xl:text-[18px] leading-6">
-                                                                {item.description}
-                                                            </p>
-                                                        </div>
-            
+
+
+
+                                    <div className="designer flex justify-end ">
+
+                                        {item.color === "designer" && (
+
+                                            <div
+                                                className="relative max-w-[300px] text-right pr-5 cursor-pointer"
+                                                onClick={() => setOpenId(isOpen ? null : item.id)}
+                                            >
+                                                <Animated animation="fadeUp">
+                                                    <span className="text-[13px]">
+                                                        {item.year}
+                                                    </span>
+
+                                                    <div className="flex items-center justify-end gap-2">
+                                                        <ChevronDown
+                                                            size={16}
+                                                            className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                                                                }`}
+                                                        />
+
+                                                        <h3 className="font-semibold text-[15px]">
+                                                            {item.title}
+                                                        </h3>
                                                     </div>
-            
-                                                )}
-            
-                                            </div>
-            
-            
-                                            <div className="flex justify-center">
-            
+                                                </Animated>
+
                                                 <div
-                                                    className={`w-5 h-5 rounded-full border-4 border-black transition-all duration-300 group-hover:scale-125
-                                                    ${item.color === "designer" ? "bg-[var(--designer-primary)]" : "bg-[var(--developer-primary)]"}`}
-                                                />
-            
+                                                    className={` absolute  mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "designer" ? "border-[var(--designer-primary)]" : "border-[var(--developer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2" }`}
+                                                >
+                                                    <p className="text-sm leading-6 text-center">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
                                             </div>
-            
-            
-                                            <div className="developer flex">
-            
-                                                {item.color === "developer" && (
-            
-                                                    <div className="relative max-w-[270px] pl-5">
-                                                        <Animated animation="fadeUp">
-                                                            <span className="text-[15px] 2xl:text-[17px] ">
-                                                                {item.year}
-                                                            </span>
-            
-                                                            <h3 className="font-semibold text-[18px] md:text-[15px]  2xl:text-[23px]">
-                                                                {item.title}
-                                                            </h3>
-            
-                                                        </Animated>
-                                                        <div
-                                                            className=" absolute top-0 left-full ml-5 -translate-y-1/2 w-[330px] rounded-xl border-2 border-[var(--developer-primary)] bg-black p-4 opacity-0 invisible -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0"
-                                                        >
-                                                            <p className=" md:text-[13px]  xl:text-[15px] 2xl:text-[17px] leading-6">
-                                                                {item.description}
-                                                            </p>
-                                                        </div>
-            
+
+                                        )}
+
+                                    </div>
+
+
+                                    <div className="flex justify-center">
+
+                                        <div
+                                            className={`w-5 h-5 rounded-full border-4 border-black transition-all duration-300
+        ${isOpen ? "scale-125" : ""}
+        ${item.color === "designer"
+                                                    ? "bg-[var(--designer-primary)]"
+                                                    : "bg-[var(--developer-primary)]"
+                                                }`}
+                                        />
+
+                                    </div>
+
+
+                                    <div className="developer flex">
+
+                                        {item.color === "developer" && (
+
+                                            <div
+                                                className="relative max-w-[300px] h-auto pl-5 cursor-pointer"
+                                                onClick={() => setOpenId(isOpen ? null : item.id)}
+                                            >
+                                                <Animated animation="fadeUp">
+                                                    <span className="text-[13px]">
+                                                        {item.year}
+                                                    </span>
+
+                                                    <div className="flex items-center gap-2">
+                                                        <h3 className="font-semibold text-[15px]">
+                                                            {item.title}
+                                                        </h3>
+
+                                                        <ChevronDown
+                                                            size={16}
+                                                            className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                                                                }`}
+                                                        />
                                                     </div>
-            
-                                                )}
-            
+                                                </Animated>
+
+                                                <div
+                                                    className={` absolute -translate-x-1/2 mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "developer" ? "border-[var(--developer-primary)]" : "border-[var(--designer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2" }`}
+                                                >
+                                                    <p className="text-sm leading-6 text-center">
+                                                        {item.description}
+                                                    </p>
+                                                </div>
                                             </div>
-            
-                                        </div>
-            
-                                    ))}
-            
-            
+                                        )}
+
+                                    </div>
+
                                 </div>
-                            </section>
+
+                            )
+                        }
+                        )}
 
 
+                    </div>
+                </section>
+
+            </section>
             <div className="mt-10 flex justify-center">
                 <ul>
                     <li className="developer theme-button text-[20px]">
