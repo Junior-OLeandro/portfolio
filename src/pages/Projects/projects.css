@@ -31,6 +31,22 @@
     gap:20px;
 }
 
+.projects-grid-mobile {
+    display: grid;
+    gap: 20px;
+}
+
+.project.active .overlay{
+    opacity:1;
+}
+
+.project.active .overlay>*{
+    transform:translateY(0);
+    opacity:1;
+}
+
+
+
 
 
 .project.large{

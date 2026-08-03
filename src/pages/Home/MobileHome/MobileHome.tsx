@@ -8,6 +8,13 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 
+import { projects } from "../../Projects/ProjectCard/Project";
+import { ProjectCard } from "../../Projects/ProjectCard/ProjectCard";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+
 export function MobileHome() {
     return (
 
@@ -125,7 +132,7 @@ export function MobileHome() {
                                         {item.color === "designer" && (
 
                                             <div
-                                                className="relative max-w-[300px] text-right pr-5 cursor-pointer"
+                                                className="relative text-right pr-2 cursor-pointer"
                                                 onClick={() => setOpenId(isOpen ? null : item.id)}
                                             >
                                                 <Animated animation="fadeUp">
@@ -133,21 +140,23 @@ export function MobileHome() {
                                                         {item.year}
                                                     </span>
 
-                                                    <div className="flex items-center justify-end gap-2">
+                                                    <div className="flex items-center ">
+
+
+                                                        <h3 className="font-semibold text-[15px]">
+                                                            {item.title}
+                                                        </h3>
                                                         <ChevronDown
                                                             size={16}
                                                             className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
                                                                 }`}
                                                         />
-
-                                                        <h3 className="font-semibold text-[15px]">
-                                                            {item.title}
-                                                        </h3>
                                                     </div>
+
                                                 </Animated>
 
                                                 <div
-                                                    className={` absolute  mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "designer" ? "border-[var(--designer-primary)]" : "border-[var(--developer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2" }`}
+                                                    className={` absolute  mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "designer" ? "border-[var(--designer-primary)]" : "border-[var(--developer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}`}
                                                 >
                                                     <p className="text-sm leading-6 text-center">
                                                         {item.description}
@@ -174,34 +183,35 @@ export function MobileHome() {
                                     </div>
 
 
-                                    <div className="developer flex">
-
+                                    <div className="developer flex ">
                                         {item.color === "developer" && (
-
                                             <div
-                                                className="relative max-w-[300px] h-auto pl-5 cursor-pointer"
+                                                className="relative inline-block pl-2 cursor-pointer"
                                                 onClick={() => setOpenId(isOpen ? null : item.id)}
                                             >
                                                 <Animated animation="fadeUp">
+
                                                     <span className="text-[13px]">
                                                         {item.year}
                                                     </span>
 
-                                                    <div className="flex items-center gap-2">
-                                                        <h3 className="font-semibold text-[15px]">
-                                                            {item.title}
-                                                        </h3>
+
+                                                    <div className="flex  items-center ">
 
                                                         <ChevronDown
                                                             size={16}
                                                             className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
                                                                 }`}
                                                         />
+                                                        <h3 className="font-semibold text-[15px]">
+                                                            {item.title}
+                                                        </h3>
+
                                                     </div>
                                                 </Animated>
 
                                                 <div
-                                                    className={` absolute -translate-x-1/2 mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "developer" ? "border-[var(--developer-primary)]" : "border-[var(--designer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2" }`}
+                                                    className={` absolute -translate-x-1/2 mt-4 w-[70vw] max-w-[250px] rounded-xl border-2 ${item.color === "developer" ? "border-[var(--developer-primary)]" : "border-[var(--designer-primary)]"} bg-black p-4 z-50 transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"}`}
                                                 >
                                                     <p className="text-sm leading-6 text-center">
                                                         {item.description}
@@ -209,27 +219,200 @@ export function MobileHome() {
                                                 </div>
                                             </div>
                                         )}
-
                                     </div>
-
                                 </div>
-
                             )
                         }
                         )}
-
-
                     </div>
+                </section>
+            </section>
+
+
+
+
+            <section className="mx-auto px-5 ">
+
+                <section className="designer flex justify-center mx-3 my-4">
+                    <Animated animation="fadeUp">
+                        <h2 className="font-bold text-center text-[15px]">
+                            Alguns dos trabalhos que desenvolvi unindo estratégia,
+                            design e tecnologia.
+                        </h2>
+                    </Animated>
+                </section>
+
+                <section className="h-full projects-grid-mobile">
+                    {projects.map((project) => (
+                        <Animated
+                            key={project.id}
+                            animation={project.animation}
+                            className={`project ${project.size} ${project.category}`}
+                        >
+                            <ProjectCard project={project} />
+                        </Animated>
+                    ))}
                 </section>
 
             </section>
-            <div className="mt-10 flex justify-center">
-                <ul>
-                    <li className="developer theme-button text-[20px]">
-                        <Link to="/projects">Projetos ↗</Link>
-                    </li>
-                </ul>
-            </div>
+
+
+            <section className="px-5 flex flex-col items-center">
+
+                <Animated animation="fadeUp">
+                    <section className="text-center py-4">
+
+
+                        <h1 className="developer text-4xl uppercase tracking-[0.1em]">
+                            Conte sua ideia!
+                        </h1>
+
+
+
+
+                    </section>
+                </Animated>
+
+                <section className="grid text-center gap-15  ">
+                    <Animated animation="fadeUp">
+
+                        <div className="developer ">
+
+                            <h2 className="designer text-3xl ">
+                                Soluções que fazem sentido.
+                            </h2>
+
+                            <p className="mt-3 leading-6">
+                                Se você busca unir estratégia, design e desenvolvimento em um único projeto, estou pronto para transformar sua ideia em uma experiência digital marcante.
+                            </p>
+
+                            <div className="mt-5 mx-3 grid grid-cols-2">
+
+                                <a
+                                    href="mailto:junior.oleandrobq@gmail.com"
+                                    className="flex items-center gap-4 rounded-md p-4 transition-all duration-300 "
+                                >
+                                    <FiMail className="text-2xl " />
+
+                                    <div>
+                                        <h3 className="text-sm uppercase tracking-widest">
+                                            E-mail
+                                        </h3>
+
+
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="https://wa.me/5532984575340"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-4 rounded-md p-4 transition-all duration-300 "
+                                >
+                                    <FaWhatsapp className="text-2xl l" />
+
+                                    <div>
+                                        <h3 className="text-sm uppercase tracking-widest">
+                                            WhatsApp
+                                        </h3>
+
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="https://www.linkedin.com/in/junior-oleandro/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-4 rounded-md p-4 transition-all duration-300"
+                                >
+                                    <FiLinkedin className="text-2xl " />
+
+                                    <div>
+                                        <h3 className="text-sm uppercase tracking-widest ">
+                                            LinkedIn
+                                        </h3>
+
+                                    </div>
+                                </a>
+
+                                <a
+                                    href="https://github.com/Junior-OLeandro"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-4 rounded-md p-4 transition-all duration-300"
+                                >
+                                    <FiGithub className="text-2xl " />
+
+                                    <div>
+                                        <h3 className="text-sm uppercase tracking-widest ">
+                                            GitHub
+                                        </h3>
+
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </Animated>
+
+                    <Animated animation="slideRight">
+
+<h2 className="developer text-3xl mb-5">
+                                Envie sua mensagem
+                            </h2>
+
+                        <form
+                            action="https://formspree.io/f/xbdnqdzj"
+                            method="POST"
+                            className="designer w-full space-y-3 "
+                        >
+                            <input
+                                type="text"
+                                name="nome"
+                                placeholder="Nome"
+                                required
+                                className="w-full border-b bg-transparent py-3 outline-none placeholder:text-(--text-muted)"
+                            />
+
+                            <input
+                                type="text"
+                                name="contato"
+                                placeholder="Contato (e-mail ou telefone)"
+                                required
+                                className="w-full border-b bg-transparent py-3 outline-none placeholder:text-(--text-muted)"
+                            />
+
+                            <input
+                                type="text"
+                                name="assunto"
+                                placeholder="Assunto"
+                                required
+                                className="w-full border-b bg-transparent py-3 outline-none placeholder:text-(--text-muted)"
+                            />
+
+                            <textarea
+                                name="mensagem"
+                                placeholder="Mensagem"
+                                rows={5}
+                                required
+                                className="w-full border-b bg-transparent py-3 outline-none resize-none placeholder:text-(--text-muted)"
+                            />
+
+                            <button
+                                type="submit"
+                                className="theme-button mt-3 mb-10"
+                            >
+                                Enviar Mensagem →
+                            </button>
+                        </form>
+                    </Animated>
+                </section>
+
+            </section>
+
+
+
         </main>
     );
 }
