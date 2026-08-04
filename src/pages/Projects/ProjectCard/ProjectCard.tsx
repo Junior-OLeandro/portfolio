@@ -10,14 +10,16 @@ export function ProjectCard({ project }: Props) {
 
     const [active, setActive] = useState(false);
 
+    function handleCardClick() {
+        if (window.matchMedia("(max-width: 1024px)").matches) {
+            setActive(prev => !prev);
+        }
+    }
+
     return (
         <article
             className={`project ${project.size} ${project.category} ${active ? "active" : ""}`}
-            onClick={() => {
-                if (window.innerWidth <= 1024) {
-                    setActive(!active);
-                }
-            }}
+            onClick={handleCardClick}
         >
 
             <img
@@ -42,7 +44,8 @@ export function ProjectCard({ project }: Props) {
                 <Link
                     to={`/projects/${project.id}`}
                     className="project-link w-40 mt-2 rounded-full p-2 text-center"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(event) => event.stopPropagation()}
+                    onTouchStart={(event) => event.stopPropagation()}
                 >
                     Ver Projeto →
                 </Link>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { Animated } from "../../../components/animations/Animated";
 import portraitMobile from "..//..//..//assets/images/foto.webp"
 import designerIcon from "/src/assets/images/vetor-designer.svg";
@@ -6,6 +6,7 @@ import developerIcon from "/src/assets/images/vetor-developer.svg";
 import { timeline } from "../../../constants/timeline";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+
 
 
 import { projects } from "../../Projects/ProjectCard/Project";
@@ -16,12 +17,14 @@ import { FaWhatsapp } from "react-icons/fa";
 
 
 export function MobileHome() {
+    const [openId, setOpenId] = useState<number | null>(null);
     return (
 
         <main className="overflow-x-hidden w-full">
+            <div id="home">
             <header>
                 <Animated animation="fadeUp">
-                    <div className="my-3 align-middle z-45 whitespace-nowrap pointer-events-none">
+                    <div className="mt-25 align-middle z-45 whitespace-nowrap pointer-events-none">
                         <h3 className="text-2xl tracking-[0.1em] uppercase font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent">
                             DO CONCEITO <br />
                             AO CÓDIGO
@@ -30,7 +33,7 @@ export function MobileHome() {
                 </Animated>
             </header>
 
-            <section className="relative h-[55vh] min-h-[320px] max-h-[650px] overflow-hidden">
+            <section className="relative h-[55vh] min-h-[320px] max-h-[650px] overflow-hidden ">
 
                 <div className="absolute inset-0 pointer-events-none items-end">
 
@@ -89,31 +92,32 @@ export function MobileHome() {
                 />
 
             </section>
+            </div>
 
-            <section>
-                <div className="text-center ">
                     <Animated animation="fadeUp">
+            <section id="about">
+                <div className="text-center ">
                         <h1 className="text-2xl tracking-[0.1em] uppercase font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
                             UMA TRAJETÓRIA <br /> EM EVOLUÇÃO
                         </h1>
-                    </Animated>
+                    
 
                 </div>
 
-                <section className="relative flex flex-1 h-full">
+                <div className="relative flex flex-1 h-full">
 
 
                     <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[3px] rounded-full bg-gradient-to-b from-[var(--designer-primary)] to-[var(--developer-primary)]" />
 
 
                     <div
-                        className="relative grid flex-1 "
+                        className="relative grid flex-1 gap-3"
                         style={{
                             gridTemplateRows: `repeat(${timeline.length}, minmax(0,1fr))`,
                         }}
                     >
                         {timeline.map((item) => {
-                            const [openId, setOpenId] = useState<number | null>(null);
+                            
                             const isOpen = openId === item.id;
 
                             return (
@@ -225,13 +229,13 @@ export function MobileHome() {
                         }
                         )}
                     </div>
-                </section>
+                </div>
             </section>
+</Animated>
 
 
 
-
-            <section className="mx-auto px-5 ">
+            <section id="projects" className="mx-auto px-5 scroll-mt-[100px]">
 
                 <section className="designer flex justify-center mx-3 my-4">
                     <Animated animation="fadeUp">
@@ -257,32 +261,19 @@ export function MobileHome() {
             </section>
 
 
-            <section className="px-5 flex flex-col items-center">
+            <section id="contact" className="px-5 flex flex-col items-center scroll-mt-[100px]">
 
-                <Animated animation="fadeUp">
-                    <section className="text-center py-4">
-
-
-                        <h1 className="developer text-4xl uppercase tracking-[0.1em]">
-                            Conte sua ideia!
-                        </h1>
-
-
-
-
-                    </section>
-                </Animated>
-
-                <section className="grid text-center gap-15  ">
+                
+                <section className="grid text-center gap-15  items-center">
                     <Animated animation="fadeUp">
 
                         <div className="developer ">
 
-                            <h2 className="designer text-3xl ">
+                            <h2 className="developer uppercase text-3xl mt-15 mb-5">
                                 Soluções que fazem sentido.
                             </h2>
 
-                            <p className="mt-3 leading-6">
+                            <p className="mt-3 leading-6 ">
                                 Se você busca unir estratégia, design e desenvolvimento em um único projeto, estou pronto para transformar sua ideia em uma experiência digital marcante.
                             </p>
 
@@ -358,9 +349,9 @@ export function MobileHome() {
 
                     <Animated animation="slideRight">
 
-<h2 className="developer text-3xl mb-5">
-                                Envie sua mensagem
-                            </h2>
+                        <h2 className="developer text-3xl mb-5">
+                            Conte sua ideia!
+                        </h2>
 
                         <form
                             action="https://formspree.io/f/xbdnqdzj"

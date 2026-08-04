@@ -1,7 +1,8 @@
 
 import {  NavLink } from "react-router-dom";
 import { Animated } from "../animations/Animated";
-import { navItems } from "./menuItems";
+import { navItems } from "./itemsDesktop";
+
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
         `theme-button transition-all duration-300 ${

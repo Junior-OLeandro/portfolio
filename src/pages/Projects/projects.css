@@ -38,6 +38,7 @@
 
 .project.active .overlay{
     opacity:1;
+    pointer-events:auto;
 }
 
 .project.active .overlay>*{
@@ -111,10 +112,10 @@
 
 }
 
-.project:hover .overlay{
-
+.project:hover .overlay,
+.project.active .overlay{
     opacity:1;
-
+    pointer-events:auto;
 }
 
 
@@ -210,7 +211,8 @@
 
 }
 
-.project:hover .overlay>*{
+.project:hover .overlay>*,
+.project.active .overlay>*{
 
     transform:translateY(0);
 

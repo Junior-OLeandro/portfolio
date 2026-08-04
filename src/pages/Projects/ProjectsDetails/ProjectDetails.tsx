@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import { HeaderProject } from "./components/HeaderProject";
+import { HeaderProject } from "./components/HeaderProject/HeaderProject";
 import { projects } from "../ProjectCard/Project";
-import { MainProject } from "./components/MainProject";
+import { MainProject } from "./components/MainProject/MainProject";
+
 
 export function ProjectDetails() {
     const { id } = useParams();

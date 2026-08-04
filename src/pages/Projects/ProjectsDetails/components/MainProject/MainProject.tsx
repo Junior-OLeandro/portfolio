@@ -1,8 +1,8 @@
+import { Animated } from "../../../../../components/animations/Animated";
+import type { Project } from "../../../../../types/types";
+import { iconMap } from "../ProjectIcons";
 
 
-import { Animated } from "../../../../components/animations/Animated";
-import type { Project } from "../../../../types/types";
-import { iconMap } from "./ProjectIcons";
 
 
 interface Props {
@@ -14,7 +14,7 @@ export function MainProject({ project }: Props) {
 
         <main className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full`}>
 
-            <section className="grid grid-cols-[35%_65%] 3xl:grid-cols-[40%_60%]">
+            <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] 3xl:grid-cols-[40%_60%]">
 
 
                 <div className="flex items-center justify-center">
@@ -105,7 +105,7 @@ export function MainProject({ project }: Props) {
                 }}
             />
 
-            <section className="grid grid-cols-[420px_2px_1fr] min-h-[220px] gap-2 4xl:mt-5 2xl:min-h-[350px] ">
+            <section className="grid grid-cols-1 lg:grid-cols-[420px_2px_1fr] min-h-[220px] gap-2 4xl:mt-5 2xl:min-h-[350px] ">
 
                 <Animated animation="slideLeft">
                     <aside className="ml-5">
@@ -134,7 +134,7 @@ export function MainProject({ project }: Props) {
                     </aside>
                 </Animated>
                 <div
-                    className="h-full "
+    className="h-[2px] w-full lg:h-full lg:w-auto"
                     style={{
                         background:
                             project.category === "designer"
@@ -151,7 +151,7 @@ export function MainProject({ project }: Props) {
 
 
                     <Animated animation="fadeUp">
-                        <div className="grid grid-cols-4 gap-8 place-items-center object-contain">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 place-items-center object-contain">
                             {project.gallery?.map((image) => (
 
                                 <img

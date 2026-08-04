@@ -6,5 +6,7 @@ import { MobileLayout } from "./MobileLayout";
 export function ResponsiveLayout() {
     const isMobile = useMediaQuery("(max-width: 1024px)");
 
-    return isMobile ? <MobileLayout /> : <DesktopLayout />;
+    return isMobile
+        ? <MobileLayout />
+        : <DesktopLayout />;
 }
