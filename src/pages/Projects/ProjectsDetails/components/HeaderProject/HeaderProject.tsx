@@ -16,7 +16,18 @@ export function HeaderProject({ project }: Props) {
 
         <Animated animation="fadeUp">
             <ul>
-                <li className="developer">
+                <li className="developer block lg:hidden">
+                    <Link
+                        to="/#projects"
+                        className="rounded-md px-3 py-2 font-bold transition-all duration-300 text-base lg:text-[18px] 2xl:text-[26px]"
+                    >
+                        ← Voltar
+                    </Link>
+                </li>
+            </ul>
+            
+            <ul>
+                <li className="developer hidden lg:block">
                     <Link
                         to="/projects"
                         className="rounded-md px-3 py-2 font-bold transition-all duration-300 text-base lg:text-[18px] 2xl:text-[26px]"

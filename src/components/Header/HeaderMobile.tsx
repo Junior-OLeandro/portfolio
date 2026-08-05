@@ -5,7 +5,7 @@ import { MenuMobile } from "./MobileMenu";
 export function HeaderMobile() {
     
     return (
-        <header className="fixed z-50 w-full bg-black flex justify-between items-center  px-4 py-4">
+        <header className="fixed z-50 top-0 p-5 w-full bg-black flex justify-between items-center ">
 
             <Logo />
 

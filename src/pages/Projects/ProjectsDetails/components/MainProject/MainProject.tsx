@@ -12,7 +12,7 @@ interface Props {
 export function MainProject({ project }: Props) {
     return (
 
-        <section className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full`}>
+        <section className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full px-4`}>
 
             <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] 3xl:grid-cols-[40%_60%]">
 
@@ -31,7 +31,7 @@ export function MainProject({ project }: Props) {
                     <div className="flex flex-col ">
 
                         <div>
-                            <h1 className="font-bold md:text-[18px] lg:text-[22px] xl:text-[26px]  2xl:text-[30px]">
+                            <h1 className=" font-bold md:text-[18px] md:text-[22px] xl:text-[26px]  2xl:text-[30px] ">
                                 {project.subtitle}
                             </h1>
 

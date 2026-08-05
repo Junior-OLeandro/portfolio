@@ -65,7 +65,7 @@ export function MenuMobile() {
     }, []);
 
     return (
-        <div ref={menuRef} className=" lg:hidden">
+        <div ref={menuRef} className="lg:hidden">
 
             <button
                 onClick={() => setIsOpen(!isOpen)}

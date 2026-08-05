@@ -13,7 +13,7 @@ export function ProjectDetails() {
     }
 
     return (
-        <main className={`h-[calc(100vh-120px)] ${project.category}`}>
+        <main className={`h-[calc(100vh-120px)] pt-20 lg:pt-0 ${project.category}`}>
             <HeaderProject project={project} />
             <MainProject project={project}/>
         </main>
