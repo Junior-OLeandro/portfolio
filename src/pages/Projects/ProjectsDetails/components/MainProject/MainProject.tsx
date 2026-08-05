@@ -12,7 +12,7 @@ interface Props {
 export function MainProject({ project }: Props) {
     return (
 
-        <main className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full`}>
+        <section className={` ${project.category} grid grid-rows-[2fr_2px_1fr] h-full w-full`}>
 
             <section className="grid grid-cols-1 lg:grid-cols-[35%_65%] 3xl:grid-cols-[40%_60%]">
 
@@ -168,6 +168,6 @@ export function MainProject({ project }: Props) {
                 </section>
 
             </section>
-        </main>
+        </section>
     );
 }

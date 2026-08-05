@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navItemsMobile } from "./menuItems";
+import { useNavigate, useLocation } from "react-router-dom";
+
 
 
 
@@ -9,8 +11,23 @@ export function MenuMobile() {
     const [isOpen, setIsOpen] = useState(false);
 
     const menuRef = useRef<HTMLDivElement>(null);
-
+    const navigate = useNavigate();
+    const location = useLocation();
     const scrollToSection = (id: string) => {
+
+        if (location.pathname !== "/") {
+
+            navigate("/", {
+                state: {
+                    scrollTo: id,
+                },
+            });
+
+            setIsOpen(false);
+
+            return;
+        }
+
         const element = document.getElementById(id);
 
         if (!element) return;

@@ -16,9 +16,12 @@ import { FaWhatsapp } from "react-icons/fa";
 
 
 
+
 export function MobileHome() {
     const [openId, setOpenId] = useState<number | null>(null);
+
     return (
+
 
         <main className="overflow-x-hidden w-full">
             <div id="home">

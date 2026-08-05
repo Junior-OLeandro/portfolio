@@ -1,13 +1,14 @@
-
+import { Outlet } from "react-router-dom";
 import { HeaderMobile } from "../components/Header/HeaderMobile";
-import { MobileHome } from "../pages/Home/MobileHome/MobileHome";
-
 
 export function MobileLayout() {
     return (
         <>
             <HeaderMobile />
-            <MobileHome />
+
+            <main className="flex-1">
+                <Outlet />
+            </main>
         </>
     );
 }
