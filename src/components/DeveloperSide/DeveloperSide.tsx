@@ -46,7 +46,7 @@ export function DeveloperSide({ position }: DeveloperSideProps) {
 
                         <img
                             src={developerProject}
-                            alt="Projeto"
+                            alt="Projeto de desenvolvedor"
                             className="w-[330px]"
                         />
 
@@ -57,7 +57,7 @@ export function DeveloperSide({ position }: DeveloperSideProps) {
 
                             <img
                                 src={developerIcon}
-                                alt="Developer"
+                                alt="Developer ícone"
                                 className="mb-5 w-36 4xl:w-46 4xl:mb-10"
                             />
 

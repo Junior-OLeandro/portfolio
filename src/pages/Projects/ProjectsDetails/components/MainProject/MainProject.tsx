@@ -157,6 +157,7 @@ export function MainProject({ project }: Props) {
                                 <img
                                     key={image}
                                     src={image}
+                                    alt="Detalhes dos projetos"
                                     className="max-h-45 object-contain transition-transform duration-300 ease-out hover:scale-105 "
                                 />
 

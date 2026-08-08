@@ -42,7 +42,7 @@ export function ProjectCard({ project }: Props) {
                 </div>
 
                 <Link
-                    to={`/projects/${project.id}`}
+                    to={`/projects/${project.slug}`}
                     className="project-link w-40 mt-2 rounded-full p-2 text-center"
                     onClick={(event) => event.stopPropagation()}
                     onTouchStart={(event) => event.stopPropagation()}

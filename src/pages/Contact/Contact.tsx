@@ -2,9 +2,16 @@ import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 import { Animated } from "../../components/animations/Animated";
+import { SEO } from "../../components/seo/SEO";
 
 export const Contact = () => {
     return (
+        <>
+            <SEO
+                title="Contato | Junior Oliveira"
+                description="Entre em contato com Junior Oliveira para projetos, oportunidades profissionais e trabalhos de desenvolvimento web e design."
+                canonical="https://junior-oleandro.github.io/portfolio/contact"
+            />
 
             <main className="h-[calc(100vh-120px)] px-10">
 
@@ -154,6 +161,6 @@ export const Contact = () => {
                 </section>
 
             </main>
-
+        </>
     );
 }

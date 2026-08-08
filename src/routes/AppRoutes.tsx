@@ -24,7 +24,7 @@ export const AppRoutes = () => {
         <Route index element={isMobile ? <HomeMobile /> : <Home />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="projects/:id" element={<ProjectDetails />} />
+        <Route path="projects/:slug" element={<ProjectDetails />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>

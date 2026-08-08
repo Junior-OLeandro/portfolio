@@ -55,7 +55,7 @@ export function DesignerSide({ position }: DesignerSideProps) {
                         <div className=" flex flex-col  pl-12 xl:pl-20">
                             <img
                                 src={designerIcon}
-                                alt="Designer"
+                                alt="Designer icone"
                                 className="mb-4 w-30 4xl:w-40 4xl:mb-10"
                             />
 
@@ -94,7 +94,7 @@ export function DesignerSide({ position }: DesignerSideProps) {
 
                         <img
                             src={designerProject}
-                            alt="Projeto"
+                            alt="Projeto de designer"
                             className="w-[350px] 3xl:w-[400px] opacity-60"
                         />
                     </div>

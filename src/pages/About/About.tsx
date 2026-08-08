@@ -1,16 +1,23 @@
 import { Animated } from "../../components/animations/Animated";
+import { SEO } from "../../components/seo/SEO";
 
 import { timeline } from "../../constants/timeline";
 
 export function About() {
     return (
+<>
+        <SEO
+    title="Sobre | Junior Oliveira"
+    description="Conheça a trajetória de Junior Oliveira, designer e desenvolvedor front-end, sua experiência, formação e evolução profissional."
+    canonical="https://junior-oleandro.github.io/portfolio/about"
+/>
 
         <main className="flex flex-col h-[calc(100vh-120px)] px-20 ">
 
 
             <section className="text-center ">
                 <Animated animation="fadeUp">
-                    <h1 className="md:text-3xl lg:text-4xl xl:text-5xl uppercase m-7 tracking-[0.15em]font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
+                    <h1 className="md:text-3xl lg:text-4xl xl:text-5xl uppercase m-7 tracking-[0.15em] font-medium text-center bg-gradient-to-t from-[var(--developer-primary)] to-[var(--designer-primary)] bg-clip-text text-transparent my-3">
                         DO DESIGN AO DESENVOLVIMENTO
                     </h1>
                 </Animated>
@@ -177,6 +184,6 @@ export function About() {
             </section>
 
         </main>
-
+</>
     );
 }
