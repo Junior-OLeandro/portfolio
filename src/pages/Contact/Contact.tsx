@@ -45,7 +45,7 @@ export const Contact = () => {
 
                                 {/* E-mail */}
                                 <a
-                                    href="mailto:junior.oleandrobq@gmail.com"
+                                    href="mailto:junior.oleandro92@gmail.com"
                                     className="flex items-center gap-4 rounded-xl p-4 transition-all duration-300"
                                     onClick={() =>
                                         trackEvent("contact_email", {
