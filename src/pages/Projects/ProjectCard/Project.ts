@@ -64,7 +64,7 @@ export const projects: Project[] = [
     size: "large",
 
     technologies: [
-        "HTML",
+        "React",
         "CSS",
         "JavaScript",
         "Supabase"
